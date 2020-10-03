@@ -1,18 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <ImageView
+        android:id="@+id/nego"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/email"
+        tools:layout_editor_absoluteY="280dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/wedeal"
+        android:layout_width="276dp"
+        android:layout_height="272dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#FFFFFF"
+        android:clickable="false"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="50dp"
+        android:autofillHints=""
+        android:background="@drawable/borde_textos"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:paddingStart="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wedeal"
+        tools:ignore="HardcodedText"
+        android:paddingLeft="10sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="@+id/email"
+        app:layout_constraintHorizontal_bias="0.927"
+        app:layout_constraintStart_toStartOf="@+id/email"
+        app:layout_constraintTop_toTopOf="@+id/email"
+        app:layout_constraintVertical_bias="0.437" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/borde_textos"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:paddingStart="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        tools:ignore="HardcodedText"
+        android:paddingLeft="10sp" />
+
+    <ImageView
+        android:id="@+id/contra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintHorizontal_bias="0.927"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toTopOf="@+id/password"/>
+
+    <Button
+        android:id="@+id/ingreso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/redondear_boton_solid"
+        android:text="iniciar sesión"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/registro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/delinear_boton"
+        android:text="registrar Negocio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingreso" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
