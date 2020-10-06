@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    tools:context=".eliminar_denuncia">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="160dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:clickable="false"
+            android:gravity="center"
+            android:hint="Lugar"
+            android:paddingLeft="10dp"
+            android:selectAllOnFocus="false"
+            android:text="Denuncia más reciente"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:background="@drawable/redondear_boton_solid"/>
+
+        <EditText
+            android:id="@+id/e_hora"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="30dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:clickable="false"
+            android:hint="Hora:"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:textColor="@color/colorPrimaryText" />
+
+        <EditText
+            android:id="@+id/e_lugar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:clickable="false"
+            android:hint="Lugar"
+            android:inputType="textMultiLine"
+            android:paddingLeft="10dp"
+            android:textColor="@color/colorPrimaryText" />
+
+        <Button
+            android:id="@+id/eliminar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/delinear_boton"
+            android:text="Eliminar" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".denuncias_recientes"
+    android:gravity="bottom">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical"
+        android:gravity="bottom">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:orientation="vertical"
+            android:gravity="bottom">
+
+
+            <EditText
+                android:id="@+id/buscar_por_hora"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:clickable="false"
+                android:hint="Buscar por hora:"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:textColor="@color/colorPrimaryText" />
+
+            <EditText
+                android:id="@+id/buscar_por_lugar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:clickable="false"
+                android:hint="Buscar por lugar:"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:textColor="@color/colorPrimaryText" />
+
+            <Button
+                android:id="@+id/buscar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/delinear_boton2"
+                android:text="Buscar" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            android:gravity="bottom">
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="10.0sp"
+                android:padding="16dip"
+                android:clipToPadding="false"/>
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+</RelativeLayout>

@@ -8,33 +8,27 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/nego"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="@+id/email"
-        tools:layout_editor_absoluteY="280dp"
-        tools:ignore="MissingConstraints" />
-
-    <ImageView
-        android:id="@+id/wedeal"
-        android:layout_width="276dp"
-        android:layout_height="272dp"
-        android:layout_marginTop="40dp"
+        android:id="@+id/logo"
+        android:layout_width="317dp"
+        android:layout_height="328dp"
+        android:layout_marginTop="50dp"
         android:layout_marginBottom="32dp"
         android:backgroundTint="#FFFFFF"
         android:clickable="false"
         app:layout_constraintBottom_toTopOf="@+id/email"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gorilaencicla"
+        tools:ignore="VectorDrawableCompat" />
 
     <EditText
         android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="50dp"
         android:autofillHints=""
         android:background="@drawable/borde_textos"
@@ -45,20 +39,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/wedeal"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
         tools:ignore="HardcodedText"
         android:paddingLeft="10sp" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/email"
-        app:layout_constraintEnd_toEndOf="@+id/email"
-        app:layout_constraintHorizontal_bias="0.927"
-        app:layout_constraintStart_toStartOf="@+id/email"
-        app:layout_constraintTop_toTopOf="@+id/email"
-        app:layout_constraintVertical_bias="0.437" />
+
 
     <EditText
         android:id="@+id/password"
@@ -79,15 +64,6 @@
         tools:ignore="HardcodedText"
         android:paddingLeft="10sp" />
 
-    <ImageView
-        android:id="@+id/contra"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/password"
-        app:layout_constraintEnd_toEndOf="@+id/password"
-        app:layout_constraintHorizontal_bias="0.927"
-        app:layout_constraintStart_toStartOf="@+id/password"
-        app:layout_constraintTop_toTopOf="@+id/password"/>
 
     <Button
         android:id="@+id/ingreso"
@@ -111,7 +87,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginEnd="50dp"
         android:background="@drawable/delinear_boton"
-        android:text="registrar Negocio"
+        android:text="Registrarse"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ingreso" />
