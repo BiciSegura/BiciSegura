@@ -29,6 +29,34 @@ public class mis_denuncias extends Fragment {
         super.onActivityCreated(savedInstanceState);
 
         mListView = getView().findViewById(R.id.listView);
+        ListAdapter mAdapter;
+        List<Objeto_denuncia> mLista = new ArrayList<>();
+
+
+        /*
+        while(pila.getLast() != null){
+
+            String correo = ps al correo del usuario xd
+            Objeto_denuncia den = pila.pop();
+
+            if(den.getUsuario().equals(correo)){
+                String hora = den.getHora();
+                String lugar = den.getLugar();
+                String usuario = den.getUsuario();
+
+                mLista.add(new Objeto_denuncia(hora,lugar,usuario));
+                mAdapter = new CustomAdapter_Denuncias(requireActivity().getApplicationContext(), R.layout.elemento_listas_denuncia,mLista);
+                mListView.setAdapter(mAdapter);
+
+            }
+
+
+
+        }
+        */
+
+
+        mListView = getView().findViewById(R.id.listView);
 
         fab = getView().findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {

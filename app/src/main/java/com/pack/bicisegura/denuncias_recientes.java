@@ -5,13 +5,18 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class denuncias_recientes extends Fragment {
 
@@ -21,7 +26,26 @@ public class denuncias_recientes extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
+        /* // Esto imprime las denuncias al recorrer la pila que las contendrá
+
         mListView = getView().findViewById(R.id.listView);
+        ListAdapter mAdapter;
+        List<Objeto_denuncia> mLista = new ArrayList<>();
+
+        while(pila.getLast() != null){
+
+            Objeto_denuncia den = pila.pop();
+
+            String hora = den.getHora();
+            String lugar = den.getLugar();
+            String usuario = den.getUsuario();
+
+            mLista.add(new Objeto_denuncia(hora,lugar,usuario));
+            mAdapter = new CustomAdapter_Denuncias(requireActivity().getApplicationContext(), R.layout.elemento_listas_denuncia,mLista);
+            mListView.setAdapter(mAdapter);
+
+        }
+        */
 
         Button buscar = getView().findViewById(R.id.buscar);
 
