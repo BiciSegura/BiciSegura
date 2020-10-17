@@ -257,17 +257,7 @@ public class LinkedList <E> {
             else if(index == 0){
                 this.insertFirst(value);
             }
-
-      /*else if(index==this.length-1){
-
-        newnode.next = current.next;
-        newnode.prev = current;
-        current.next.prev = newnode;
-        current.next = newnode;
-
-        this.length++;
-
-      }*/
+            
             else if(0<index && index<this.length){
 
                 newnode.next = current.next;
