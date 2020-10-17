@@ -1,7 +1,6 @@
 package com.pack.bicisegura;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,7 +8,6 @@ import android.view.ViewGroup;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
@@ -17,7 +15,6 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 public class mis_denuncias extends Fragment {
 
@@ -30,7 +27,7 @@ public class mis_denuncias extends Fragment {
 
         mListView = getView().findViewById(R.id.listView);
         ListAdapter mAdapter;
-        List<Objeto_denuncia> mLista = new ArrayList<>();
+        List<Denuncia> mLista = new ArrayList<>();
 
 
         /*
