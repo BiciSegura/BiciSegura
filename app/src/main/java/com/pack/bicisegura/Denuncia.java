@@ -1,6 +1,6 @@
 package com.pack.bicisegura;
 
-public class Objeto_denuncia {
+public class Denuncia{
     private String lugar;
     private String hora;
     private String usuario;
@@ -29,7 +29,7 @@ public class Objeto_denuncia {
         this.usuario = usuario;
     }
 
-    public Objeto_denuncia(String lugar, String hora, String usuario){
+    public Denuncia(String lugar, String hora, String usuario){
         this.lugar = lugar;
         this.hora = hora;
         this.usuario = usuario;
