@@ -1,4 +1,5 @@
 package com.pack.bicisegura;
+import java.util.Random;
 
 public class LinkedList <E> {
     Node<E> head;
@@ -295,16 +296,12 @@ public class LinkedList <E> {
     }
 
     boolean contain(E value){
-
-
         if(this.length == 0 ){
             return false;
 
         }else{
             Node<E> aux = head;
             for(int i=0;i < this.length ; i++){
-
-
                 if(aux.value == value){
                     break;
                 }else{
@@ -312,26 +309,36 @@ public class LinkedList <E> {
                     if(aux.next == null){
                         break;
                     }
-
                     else{
                         aux = aux.next;
-
                     }
-
-
                 }
             }
-
             if(aux.value == value){
                 return true;
-            }
-
-            else{
+            } else{
                 return false;
             }
-
         }
+    }
 
+
+    void fillList(int cantidad){
+        Random rand = new Random();
+        int horamax = 2400;
+        int callemax = 200;
+        for(int i = 0 ; i < cantidad; i++){
+            int hora = rand.nextInt(horamax);
+            int calle_random = rand.nextInt(callemax);
+            int carrera_random = rand.nextInt(callemax);
+            int numero_random = rand.nextInt(callemax);
+            String lugar = "calle " + calle_random + " carrera " + carrera_random + " - " + numero_random;
+            Denuncia P = new Denuncia();
+            P.setHora(Integer.toString(hora));
+            P.setLugar(lugar);
+            P.setUsuario("pepe " + i);
+            this.insertLast((E) P);
+        }
     }
 
 

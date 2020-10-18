@@ -35,4 +35,7 @@ public class Denuncia{
         this.usuario = usuario;
 
     }
+    public Denuncia(){
+
+    }
 }
