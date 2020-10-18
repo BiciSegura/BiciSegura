@@ -10,18 +10,20 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.google.gson.internal.LinkedTreeMap;
+
 import java.util.List;
 
 
-public class CustomAdapter_Denuncias{ //extends ArrayAdapter<Objeto_denuncia>{
+public class CustomAdapter_Denuncias extends ArrayAdapter<Denuncia>{
 
-    /* // Esta clase se necesita para la impresión de las denuncias, sin embargo necesita la clase Estructuras_Lista para implementarse
-    private Estructuras_Lista lista;
+    // Esta clase se necesita para la impresión de las denuncias, sin embargo necesita la clase Estructuras_Lista para implementarse
+    private List<Denuncia> lista;
     private Context mContext;
     private int resourceLayout;
 
-    public CustomAdapter_Denuncias(@NonNull Context context, int resource, Estructuras_Lista<Objeto_denuncia> objects) {
-        super(context, resource, (List<Objeto_denuncia>) objects); //Esto no se utiliza, por lo tanto para ahorrar tiempo usamos funciones nativas
+    public CustomAdapter_Denuncias(@NonNull Context context, int resource, List<Denuncia> objects) {
+        super(context, resource, (List<Denuncia>) objects); //Esto no se utiliza, por lo tanto para ahorrar tiempo usamos funciones nativas
         this.lista = objects;
         this.mContext = context;
         this.resourceLayout = resource;
@@ -34,7 +36,9 @@ public class CustomAdapter_Denuncias{ //extends ArrayAdapter<Objeto_denuncia>{
         if (view == null)
             view = LayoutInflater.from(mContext).inflate(resourceLayout, null);
 
-        Objeto_denuncia denuncia = lista.getPosicion(position); Ajustar nombre del método al que sea establecido eventualmente.
+        Denuncia denuncia = lista.get(position); //Ajustar nombre del método al que sea establecido eventualmente.
+
+
 
         TextView textoUsuario = view.findViewById((R.id.usuario));
         String usuario = "Denunciado por:  " + denuncia.getUsuario();
@@ -51,5 +55,5 @@ public class CustomAdapter_Denuncias{ //extends ArrayAdapter<Objeto_denuncia>{
 
         return view;
 
-    }*/
+    }
 }

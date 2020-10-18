@@ -74,16 +74,18 @@ public class registrousuario extends AppCompatActivity {
     private void saveData(){
         SharedPreferences sharedPreferences = getSharedPreferences("shared preferences", MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
+
+        editor.remove("usuario list").commit();
         Gson gson = new Gson();
         String json = gson.toJson(listausuarios);
-        editor.putString("task list", json);
+        editor.putString("usuario list", json);
         editor.apply();
     }
 
     private void loadData(){
         SharedPreferences sharedPreferences = getSharedPreferences("shared preferences", MODE_PRIVATE);
         Gson gson = new Gson();
-        String json = sharedPreferences.getString("task list", null);
+        String json = sharedPreferences.getString("usuario list", null);
         Type type = new TypeToken<LinkedList<Usuario>>() {}.getType();
         listausuarios = gson.fromJson(json, type);
 

@@ -54,7 +54,6 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "No hay usuarios registrados", Toast.LENGTH_LONG).show();
 
                 }else{
-                    int count = 1;
                     for(int i=0; i < listausuarios.length ; i++){
                         if(usuariosiguales(aux.value, us)){
                             Intent reg = new Intent(MainActivity.this, inicia_Pestañas.class);
@@ -63,9 +62,9 @@ public class MainActivity extends AppCompatActivity {
 
                         }else{
                             aux = aux.next;
-                            count = count + 1;
-                            if (count == listausuarios.length ){
-                                System.out.println("El valor no esta en la lista.");
+                            if (i == listausuarios.length-1 ){
+                                Toast.makeText(MainActivity.this, "Este usuario no se encuentra registrado", Toast.LENGTH_LONG).show();
+                                ;
                             }
                         }
                     }
@@ -78,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
     private void loadData(){
         SharedPreferences sharedPreferences = getSharedPreferences("shared preferences", MODE_PRIVATE);
         Gson gson = new Gson();
-        String json = sharedPreferences.getString("task list", null);
+        String json = sharedPreferences.getString("usuario list", null);
         Type type = new TypeToken<LinkedList<Usuario>>() {}.getType();
         listausuarios = gson.fromJson(json, type);
 

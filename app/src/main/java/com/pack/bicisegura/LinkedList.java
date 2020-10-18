@@ -5,12 +5,13 @@ public class LinkedList <E> {
     Node<E> head;
     Node<E> tail;
     int length;
+
+
     public LinkedList(){
         this.length = 0;
         this.head = null;
         this.tail = null;
     }
-
 
 
     public E getValue(Integer index){
@@ -37,7 +38,7 @@ public class LinkedList <E> {
 
 
     public E getFirst() {
-        if (!this.isEmpty()){
+        if (this.length != 0){
             return this.head.value;
 
         } else {
@@ -56,23 +57,36 @@ public class LinkedList <E> {
 
 
     public void deleteFirst() {
-        if (this.length != 0){
+        if (this.length >1){
             this.head.next.prev = null;
             this.head = this.head.next;
 
             this.length--;
-        } else {
+        }
+        else if(this.length == 1){
+            this.head = null;
+            this.tail = null;
+            this.length = 0;
+
+        }
+        else {
             System.out.println("No puedo eliminar en una lista vacia");
         }
     }
 
 
     public void deleteLast() {
-        if (this.length != 0){
+        if (this.length > 1){
             this.tail.prev.next = null;
             this.tail = this.tail.prev;
             this.length--;
-        } else {
+        }
+        else if(this.length == 1){
+            this.head = null;
+            this.tail = null;
+            this.length = 0;
+        }
+        else {
             System.out.println("No puedo eliminar en una lista vacia");
         }
     }
@@ -80,7 +94,7 @@ public class LinkedList <E> {
 
 
     public void insertFirst(E element) {
-        if(!this.isEmpty()){
+        if(this.length != 0){
             this.length++;
             Node<E> newFirst = new Node<E>(element);
             newFirst.next = this.head;
@@ -339,6 +353,13 @@ public class LinkedList <E> {
             P.setUsuario("Pepito" + i);
             this.insertLast((E) P);
         }
+    }
+
+    public E pop (){
+        E T = (E) this.getFirst();
+        this.deleteFirst();
+        return T;
+
     }
 
 
