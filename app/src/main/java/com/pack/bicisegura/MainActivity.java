@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -48,15 +49,27 @@ public class MainActivity extends AppCompatActivity {
                 us.setCorreo(Correo);
                 us.setContraseña(Pass);
 
-                if(listausuarios.contain(us)){
-                    Intent reg = new Intent(MainActivity.this, inicia_Pestañas.class);
-                    startActivity(reg);
-                }
+                Node<Usuario> aux = listausuarios.head;
+                if(listausuarios.length == 0 ){
+                    Toast.makeText(MainActivity.this, "No hay usuarios registrados", Toast.LENGTH_LONG).show();
 
-                /*if(Correo.equals("1") && Pass.equals("2")){
-                    Intent reg = new Intent(MainActivity.this, inicia_Pestañas.class);
-                    startActivity(reg);
-                }*/
+                }else{
+                    int count = 1;
+                    for(int i=0; i < listausuarios.length ; i++){
+                        if(usuariosiguales(aux.value, us)){
+                            Intent reg = new Intent(MainActivity.this, inicia_Pestañas.class);
+                            startActivity(reg);
+                            break;
+
+                        }else{
+                            aux = aux.next;
+                            count = count + 1;
+                            if (count == listausuarios.length ){
+                                System.out.println("El valor no esta en la lista.");
+                            }
+                        }
+                    }
+                }
 
             }
         });
@@ -71,6 +84,17 @@ public class MainActivity extends AppCompatActivity {
 
         if (listausuarios == null){
             listausuarios = new LinkedList<Usuario>();
+        }
+
+    }
+
+    private boolean usuariosiguales(Usuario a, Usuario b){
+
+        if(a.getContraseña().equals(b.getContraseña()) && a.getCorreo().equals(b.getCorreo())){
+            return true;
+        }
+        else{
+            return false;
         }
 
     }
