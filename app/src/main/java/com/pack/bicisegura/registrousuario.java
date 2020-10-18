@@ -1,5 +1,6 @@
 package com.pack.bicisegura;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -46,6 +47,10 @@ public class registrousuario extends AppCompatActivity {
 
                     listausuarios.insertLast(newuser);
                     saveData();
+                    Toast.makeText(registrousuario.this, "Su usuario se registró correctamente", Toast.LENGTH_LONG).show();
+
+                    Intent reg = new Intent(registrousuario.this, inicia_Pestañas.class);
+                    startActivity(reg);
 
                 }
 
