@@ -36,7 +36,7 @@ public class LinkedList <E> {
     }
 
 
-    E getFirst() {
+    public E getFirst() {
         if (!this.isEmpty()){
             return this.head.value;
 
@@ -46,7 +46,7 @@ public class LinkedList <E> {
     }
 
 
-    E getLast(){
+    public E getLast(){
         if (!this.isEmpty()){
             return this.tail.value;
         } else {
@@ -55,7 +55,7 @@ public class LinkedList <E> {
     }
 
 
-    void deleteFirst() {
+    public void deleteFirst() {
         if (this.length != 0){
             this.head.next.prev = null;
             this.head = this.head.next;
@@ -67,7 +67,7 @@ public class LinkedList <E> {
     }
 
 
-    void deleteLast() {
+    public void deleteLast() {
         if (this.length != 0){
             this.tail.prev.next = null;
             this.tail = this.tail.prev;
@@ -79,7 +79,7 @@ public class LinkedList <E> {
 
 
 
-    void insertFirst(E element) {
+    public void insertFirst(E element) {
         if(!this.isEmpty()){
             this.length++;
             Node<E> newFirst = new Node<E>(element);
@@ -100,7 +100,7 @@ public class LinkedList <E> {
     }
 
 
-    void insertLast(E element) {
+    public void insertLast(E element) {
         if(!this.isEmpty()){
             this.length++;
             Node<E> newLast = new Node<E>(element);
@@ -119,17 +119,17 @@ public class LinkedList <E> {
     }
 
 
-    boolean isEmpty() {
+    public boolean isEmpty() {
         return this.length == 0;
     }
 
 
-    Integer length() {
+    public Integer length() {
         return this.length;
     }
 
 
-    void setValue(Integer index, E value){
+    public void setValue(Integer index, E value){
 
         Node<E> aux = this.head;
 
@@ -144,7 +144,7 @@ public class LinkedList <E> {
         }
     }
 
-    void deleteIndex(Integer index){
+    public void deleteIndex(Integer index){
 
         Node<E> aux = head;
 
@@ -213,7 +213,7 @@ public class LinkedList <E> {
 
 
 
-    void deleteValue(E value){
+    public void deleteValue(E value){
         Node<E> aux = this.head;
         if(this.length == 0 ){
             System.out.println("La lista esta vacia.");
@@ -237,7 +237,7 @@ public class LinkedList <E> {
 
 
 
-    void insert(Integer index, E value){
+    public void insert(Integer index, E value){
         Node<E> newnode = new Node<E>(value);
         Node<E> current = this.head;
 
@@ -290,12 +290,12 @@ public class LinkedList <E> {
 
 
 
-    void clear(){
+    public void clear(){
         this.head=null;
         this.tail=null;
     }
 
-    boolean contain(E value){
+    public boolean contain(E value){
         if(this.length == 0 ){
             return false;
 
@@ -323,7 +323,7 @@ public class LinkedList <E> {
     }
 
 
-    void fillList(int cantidad){
+    public void fillList(int cantidad){
         Random rand = new Random();
         int horamax = 2400;
         int callemax = 200;
@@ -336,7 +336,7 @@ public class LinkedList <E> {
             Denuncia P = new Denuncia();
             P.setHora(Integer.toString(hora));
             P.setLugar(lugar);
-            P.setUsuario("pepe " + i);
+            P.setUsuario("Pepito" + i);
             this.insertLast((E) P);
         }
     }
