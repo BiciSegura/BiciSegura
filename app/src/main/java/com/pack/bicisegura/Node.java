@@ -10,6 +10,9 @@ public class Node<E>{
         this.next = null;
         this.prev = null;
     }
+    public Node(){
+
+    }
     public E getValue(){
         return this.value;
     }
