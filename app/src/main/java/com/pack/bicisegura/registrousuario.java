@@ -26,6 +26,7 @@ public class registrousuario extends AppCompatActivity {
                 String confpass = ((EditText) findViewById(R.id.confir_contra)).getText().toString().trim();
 
 
+
                 //Próximamente?:
                 /*String Usuario = ((EditText) findViewById(R.id.usuario)).getText().toString().trim();
                 String Ciudad = ((EditText) findViewById(R.id.ciudad)).getText().toString().trim();
