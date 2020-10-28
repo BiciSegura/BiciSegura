@@ -1,0 +1,40 @@
+package com.pack.bicisegura;
+
+public class Estructura_arbol<E>{
+    E value;
+    Estructura_arbol<E> left;
+    Estructura_arbol<E> rigth;
+
+    public Estructura_arbol(E value){
+        this.value = value;
+        this.left = null;
+        this.rigth = null;
+    }
+    public Estructura_arbol(){
+
+    }
+    public E getValue(){
+        return this.value;
+    }
+    public void setValue(E value){
+        this.value = value;
+    }
+
+    public E datomenor(Estructura_arbol root){
+        E result=null;
+        while(root.value != null){
+            if(this.root.left.value > this.root.value && this.root.value < this.root.rigth.value ){
+                result = this.root.value;
+                return result;
+                break;
+            }
+
+
+
+
+        }
+        return result;
+
+    }
+
+}
