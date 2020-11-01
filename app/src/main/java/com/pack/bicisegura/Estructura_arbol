@@ -1,6 +1,6 @@
 package com.pack.bicisegura;
 
-public class Estructura_arbol<E>{
+public class Estructura_arbol<E extends Comparable<?super E>>{
     E value;
     Estructura_arbol<E> left;
     Estructura_arbol<E> rigth;
@@ -20,18 +20,40 @@ public class Estructura_arbol<E>{
         this.value = value;
     }
 
-    public E datomenor(Estructura_arbol root){
+    public E findmind(Estructura_arbol root){
         E result=null;
-        while(root.value != null){
-            if(this.root.left.value > this.root.value && this.root.value < this.root.rigth.value ){
+        // caso de un arbol con tan solo dos hijos
+        if(this.root.left.value > this.root.value && this.root.value < this.root.rigth.value ){
+            result = this.root.value;
+            return result;
+        }
+        while(root != null){
+            if (this.root.left.value < this.root.rigth.value){
+                result= this.root.left.value;
+                root = this.root.left.value;
+            }else{
                 result = this.root.value;
-                return result;
-                break;
+
             }
+        }
+        return result;
 
+    }
+    public E findmax(Estructura_arbol root){
+        E result=null;
+        // caso de un arbol con tan solo dos hijos
+        if(this.root.left.value < this.root.value && this.root.value > this.root.rigth.value ){
+            result = this.root.value;
+            return result;
+        }
+        while(root != null){
+            if (this.root.left.value < this.root.rigth.value){
+                result= this.root.rigth.value;
+                root = this.root.rigth.value;
+            }else{
+                result = this.root.value;
 
-
-
+            }
         }
         return result;
 
