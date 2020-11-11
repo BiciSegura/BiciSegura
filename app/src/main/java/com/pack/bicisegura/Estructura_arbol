@@ -1,24 +1,84 @@
 package com.pack.bicisegura;
 
-public class Estructura_arbol<E extends Comparable<?super E>>{
-    E value;
-    Estructura_arbol<E> left;
-    Estructura_arbol<E> rigth;
+ class NodoAvl<E extends Comparable<?super E>>{
+    public E value;
+    public NodoAvl<E> left;
+    public NodoAvl<E> rigth;
+    public int heigth;
 
-    public Estructura_arbol(E value){
+
+    public NodoAvl(E value){
         this.value = value;
         this.left = null;
         this.rigth = null;
+        this.heigth= 1;
     }
-    public Estructura_arbol(){
+     public E getValue(){
+         return this.value;
+     }
+     public void setValue(E value){
+         this.value = value;
+     }
+     public int getHeigth(){
+         return this.heigth;
+     }
+ }
 
-    }
-    public E getValue(){
-        return this.value;
-    }
-    public void setValue(E value){
-        this.value = value;
-    }
+ public class Estructura_arbol<E extends Comparable<?super E>>{
+
+
+     public NodoAvl<E> root;
+     public int heigthleft=0;
+     public int heigthrigth=0;
+
+     public Estructura_arbol(){
+         this.root = null;
+     }
+//METODO PARA HALLAR LA ALTURA DE UN ARBOL
+     public int altura(NodoAvl root){
+
+         if(this.root != null){
+
+             if(this.root.left != null ){
+                 heigthleft += 1;
+                 altura(root.left);}
+             else if(this.root.rigth != null ){
+                 heigthrigth += 1;
+                 altura(root.left);}
+
+         }else{
+             if(heigthleft > heigthrigth){
+                 root.heigth=heigthleft;
+             }else if (heigthleft == heigthrigth){
+                 root.heigth=heigthleft;
+
+             }else {
+                 root.heigth=heigthrigth;
+             }
+
+         }
+         return root.heigth;
+
+     }
+     public void insert(T value){
+         this.root = this.insert(value, this.root);
+     }
+
+     private AVLNode<T> insert(T value, AVLNode<T> node){
+         if(node == null){
+             return new AVLNode<>(value);
+         }else{
+             int resultCompare = node.value.compareTo(value);
+             if(resultCompare == 1) {
+                 node.leftSon = this.insert(value, node.rightSon);
+             }  // > - 1
+             else if(resultCompare == -1) {
+                 node.rightSon = this.insert(value, node.leftSon);
+             } // < -1
+             else {}
+             return node; // == 0
+         }
+     }
 
     public E findmind(Estructura_arbol root){
         E result=null;
@@ -59,4 +119,4 @@ public class Estructura_arbol<E extends Comparable<?super E>>{
 
     }
 
-}
+}}
