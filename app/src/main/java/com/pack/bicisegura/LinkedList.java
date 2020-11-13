@@ -361,6 +361,7 @@ public class LinkedList <E> {
         return T;
 
     }
+    //hola mundo
 
 
 }
