@@ -11,7 +11,7 @@ package com.pack.bicisegura;
         this.value = value;
         this.left = null;
         this.rigth = null;
-        this.heigth= 1;
+        this.heigth= -1;
     }
      public E getValue(){
          return this.value;
@@ -21,6 +21,9 @@ package com.pack.bicisegura;
      }
      public int getHeigth(){
          return this.heigth;
+     }
+     public void setHeigth(int heigth){
+         this.heigth = heigth;
      }
  }
 
@@ -60,27 +63,27 @@ package com.pack.bicisegura;
          return root.heigth;
 
      }
-     public void insert(T value){
+     public void insert(E value){
          this.root = this.insert(value, this.root);
      }
 
-     private AVLNode<T> insert(T value, AVLNode<T> node){
+     private NodoAvl<E> insert(E value, NodoAvl<E> node){
          if(node == null){
-             return new AVLNode<>(value);
+             return new NodoAvl<>(value);
          }else{
              int resultCompare = node.value.compareTo(value);
              if(resultCompare == 1) {
-                 node.leftSon = this.insert(value, node.rightSon);
+                 node.left = this.insert(value, node.rigth);
              }  // > - 1
              else if(resultCompare == -1) {
-                 node.rightSon = this.insert(value, node.leftSon);
+                 node.rigth = this.insert(value, node.left);
              } // < -1
              else {}
              return node; // == 0
          }
      }
 
-    public E findmind(Estructura_arbol root){
+    /*public E findmind(Estructura_arbol root){
         E result=null;
         // caso de un arbol con tan solo dos hijos
         if(this.root.left.value > this.root.value && this.root.value < this.root.rigth.value ){
@@ -98,8 +101,46 @@ package com.pack.bicisegura;
         }
         return result;
 
-    }
-    public E findmax(Estructura_arbol root){
+    }*/
+     public void remove(E value){
+
+     }
+
+     public E findMin(){
+         return this.findMin(this.root).value;
+     }
+
+     private NodoAvl<E> findMin(NodoAvl<E> node){
+         if(node.left == null)
+             return node;
+         else
+             return this.findMin(node.left);
+     }
+
+     public E findMax(){
+         return this.findMin(this.root).value;
+     }
+
+     private NodoAvl<E> findMax(NodoAvl<E> node){
+         if(node.rigth == null)
+             return node;
+         else
+             return this.findMin(node.rigth);
+     }
+
+     //public boolean contains(T value){
+
+     //}
+
+     public void makeEmpty(){
+         this.root = null;
+     }
+
+     public boolean isEmpty(){
+         return this.root == null;
+     }
+
+    /*public E findmax(Estructura_arbol root){
         E result=null;
         // caso de un arbol con tan solo dos hijos
         if(this.root.left.value < this.root.value && this.root.value > this.root.rigth.value ){
@@ -117,6 +158,28 @@ package com.pack.bicisegura;
         }
         return result;
 
-    }
+    }*/
 
-}}
+     private boolean findValue(E value, NodoAvl<E> node){
+
+         int resultCompare = node.value.compareTo(value);
+
+         if(resultCompare == 0){
+             return true;
+         }
+         else if(resultCompare == 1) {
+            // node.left = this.findValue(value, node.rigth);
+             return findValue(value, node.left);
+         }  // > - 1
+         else if(resultCompare == -1) {
+             return findValue(value, node.rigth);
+         } // < -1
+         else {
+             return false;
+         }
+
+
+
+     }
+
+}
