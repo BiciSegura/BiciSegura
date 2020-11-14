@@ -20,6 +20,8 @@ import androidx.fragment.app.Fragment;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
+import org.intellij.lang.annotations.JdkConstants;
+
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
@@ -29,11 +31,17 @@ public class denuncias_recientes extends Fragment{
     private ListView mListView;
     LinkedList<Denuncia> ListaDenuncias;
 
+    LinkedList<Denuncia> lanuevalista = new LinkedList<Denuncia>();
+
+
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
         loadData();
+
+
+       /* lanuevalista.fillList(1000);*/
 
         mListView = getView().findViewById(R.id.listView);
         ListAdapter mAdapter;
@@ -42,13 +50,15 @@ public class denuncias_recientes extends Fragment{
         if(ListaDenuncias != null){
             while(ListaDenuncias.getFirst() != null){
 
-                Denuncia den = ListaDenuncias.pop();
+
+                Denuncia den = ListaDenuncias.getFirst();
+                ListaDenuncias.deleteFirst();
 
                 String hora = den.getHora();
                 String lugar = den.getLugar();
                 String usuario = den.getUsuario();
 
-                mLista.add(new Denuncia(hora,lugar,usuario));
+                mLista.add(new Denuncia(lugar,hora,usuario));
                 mAdapter = new CustomAdapter_Denuncias(requireActivity().getApplicationContext(), R.layout.elemento_listas_denuncia,mLista);
                 mListView.setAdapter(mAdapter);
 
@@ -63,10 +73,23 @@ public class denuncias_recientes extends Fragment{
         buscar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String hora = ((EditText) getView().findViewById(R.id.buscar_por_hora)).getText().toString().trim();
-                String lugar = ((EditText) getView().findViewById(R.id.buscar_por_lugar)).getText().toString().trim();
+                String Lugar = ((EditText) getView().findViewById(R.id.buscar_por_hora)).getText().toString().trim();
+                String Hora = ((EditText) getView().findViewById(R.id.buscar_por_lugar)).getText().toString().trim();
+                Toast.makeText(getActivity(), "Falta por implementar", Toast.LENGTH_LONG).show();
+                while(lanuevalista.getFirst() != null){
 
-                Toast.makeText(getActivity(), "Todavía no se puede xd", Toast.LENGTH_LONG).show();
+                    Denuncia den = lanuevalista.getFirst();
+                    lanuevalista.deleteFirst();
+
+                    String hora = den.getHora();
+                    String lugar = den.getLugar();
+                    String usuario = den.getUsuario();
+                    /*
+                    mLista.add(new Denuncia(hora,lugar,usuario));
+                    mAdapter = new CustomAdapter_Denuncias(requireActivity().getApplicationContext(), R.layout.elemento_listas_denuncia,mLista);
+                    mListView.setAdapter(mAdapter);*/
+                }
+
 
             }
         });
@@ -85,14 +108,98 @@ public class denuncias_recientes extends Fragment{
 
     private void loadData(){
         SharedPreferences sharedPreferences = this.getActivity().getSharedPreferences("shared preferences", Context.MODE_PRIVATE);
-        Gson gson = new Gson();
-        String json = sharedPreferences.getString("denuncia list", null);
-        Type type = new TypeToken<LinkedList<Denuncia>>() {}.getType();
-        ListaDenuncias =  gson.fromJson(json, type);
 
-        if (ListaDenuncias == null){
+        String densString = sharedPreferences.getString("denuncia list", null);
+        if(densString == null){
             ListaDenuncias = new LinkedList<>();
+        }else {
+            ListaDenuncias = toLinkedList(densString);
         }
+
+    }
+
+    public static Denuncia fromString(String denString){
+
+        int i = 0;
+        String hora = "";
+        String lugar = "";
+        String usuario = "";
+
+
+        while(!Character.toString(denString.charAt(i)).equals(">")){
+            hora = hora + denString.charAt(i);
+            i++;
+        }
+        i++;
+        while(!Character.toString(denString.charAt(i)).equals("]")){
+            lugar = lugar + denString.charAt(i);
+            i++;
+        }
+        i++;// hable mas bien para ir haciendo las cosas en conjunto mas rapido
+        while(!Character.toString(denString.charAt(i)).equals(")")){
+            usuario = usuario + denString.charAt(i);
+            i++;
+        }
+        i++;
+
+        Denuncia den = new Denuncia();
+        den.setLugar(lugar);
+        den.setUsuario(usuario);
+        den.setHora(hora);
+
+        return den;
+
+
+    }
+
+    public static String toString(Denuncia den){
+
+        String denString = "";
+
+        String Hora = den.getHora();
+        String lugar = den.getLugar();
+        String usuario = den.getUsuario();
+
+        denString = denString +"{" + Hora+ ">" + lugar+ "]"  + usuario + ")";
+
+        denString = denString + "}";
+
+
+
+
+        return denString;
+
+    }
+
+    public static LinkedList<Denuncia> toLinkedList(String fullString){
+
+
+        int j = 0;
+
+        LinkedList<Denuncia> pruebafromstring = new LinkedList<Denuncia>();
+
+        while(j < fullString.length()){
+
+            if(Character.toString(fullString.charAt(j)).equals("{")){
+
+
+                String denList = "";
+                j++;
+                while(!Character.toString(fullString.charAt(j)).equals("}")){
+                    denList = denList+fullString.charAt(j);
+                    j++;
+
+                }
+
+                Denuncia den = new Denuncia();
+                den = fromString(denList);
+
+                pruebafromstring.insertLast(den);
+            }
+            j++;
+        }
+
+        return pruebafromstring;
 
     }
 

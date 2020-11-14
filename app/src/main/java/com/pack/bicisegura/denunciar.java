@@ -1,5 +1,6 @@
 package com.pack.bicisegura;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -49,7 +50,8 @@ public class denunciar extends AppCompatActivity {
                 Toast.makeText(denunciar.this, "Se guardó su denuncia", Toast.LENGTH_LONG).show();
 
 
-                finish();
+                Intent reg = new Intent(denunciar.this, inicia_Pestañas.class);
+                startActivity(reg);
 
             }
         });
@@ -60,25 +62,120 @@ public class denunciar extends AppCompatActivity {
         SharedPreferences.Editor editor = sharedPreferences.edit();
 
         editor.remove("denuncia list");
+        String densString = "";
 
-        Gson gson = new Gson();
+        for(int i = 0 ; i < ListaDenuncias.length;i++){
 
-        String json = gson.toJson(ListaDenuncias);
+            Denuncia den = ListaDenuncias.getValue(i);
+            densString = densString + toString(den);
 
-        editor.putString("denuncia list", json);
+        }
+        Toast.makeText(denunciar.this, "hola "+densString, Toast.LENGTH_LONG).show();
+        editor.putString("denuncia list", densString);
         editor.apply();
+
     }
 
     private void loadData(){
         SharedPreferences sharedPreferences = getSharedPreferences("shared preferences", MODE_PRIVATE);
-        Gson gson = new Gson();
-        String json = sharedPreferences.getString("denuncia list", null);
-        Type type = new TypeToken<LinkedList<Denuncia>>() {}.getType();
-        ListaDenuncias = gson.fromJson(json, type);
 
-        if (ListaDenuncias == null){
-            ListaDenuncias = new LinkedList<Denuncia>();
+        String densString = sharedPreferences.getString("denuncia list", null);
+
+        if(densString == null){
+            ListaDenuncias = new LinkedList<>();
+        }else {
+            ListaDenuncias = toLinkedList(densString);
         }
 
     }
+
+
+    public static Denuncia fromString(String denString){
+
+        int i = 0;
+        String hora = "";
+        String lugar = "";
+        String usuario = "";
+
+
+        while(!Character.toString(denString.charAt(i)).equals(">")){
+            hora = hora + denString.charAt(i);
+            i++;
+        }
+        i++;
+        while(!Character.toString(denString.charAt(i)).equals("]")){
+            lugar = lugar + denString.charAt(i);
+            i++;
+        }
+        i++;// hable mas bien para ir haciendo las cosas en conjunto mas rapido
+        while(!Character.toString(denString.charAt(i)).equals(")")){
+            usuario = usuario + denString.charAt(i);
+            i++;
+        }
+        i++;
+
+        Denuncia den = new Denuncia();
+        den.setLugar(lugar);
+        den.setUsuario(usuario);
+        den.setHora(hora);
+
+        return den;
+
+
+    }
+
+    public static String toString(Denuncia den){
+
+        String denString = "";
+
+        String Hora = den.getHora();
+        String lugar = den.getLugar();
+        String usuario = den.getUsuario();
+
+        denString = denString +"{" + Hora+ ">" + lugar+ "]"  + usuario + ")";
+
+        denString = denString + "}";
+
+
+
+
+        return denString;
+
+    }
+
+    public static LinkedList<Denuncia> toLinkedList(String fullString){
+
+
+        int j = 0;
+
+        LinkedList<Denuncia> pruebafromstring = new LinkedList<Denuncia>();
+
+        while(j < fullString.length()){
+
+            if(Character.toString(fullString.charAt(j)).equals("{")){
+
+
+                String denList = "";
+                j++;
+                while(!Character.toString(fullString.charAt(j)).equals("}")){
+                    denList = denList+fullString.charAt(j);
+                    j++;
+
+                }
+
+                Denuncia den = new Denuncia();
+                den = fromString(denList);
+
+                pruebafromstring.insertLast(den);
+            }
+            j++;
+        }
+
+        return pruebafromstring;
+
+    }
+
+
+
+
 }

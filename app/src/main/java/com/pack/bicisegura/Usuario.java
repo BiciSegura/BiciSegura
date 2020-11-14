@@ -3,6 +3,7 @@ package com.pack.bicisegura;
 public class Usuario {
     private String correo;
     private String contraseña;
+    private String usuario;
 
     public String getCorreo() {
         return correo;
@@ -20,9 +21,18 @@ public class Usuario {
         this.contraseña = contraseña;
     }
 
+    public String getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(String usuario){
+        this.usuario = usuario;
+    }
+
     public Usuario(String correo, String contraseña){
         this.correo = correo;
         this.contraseña = contraseña;
+        this.usuario = usuario;
 
     }
     public Usuario(){

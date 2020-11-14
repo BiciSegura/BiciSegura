@@ -38,12 +38,14 @@ public class registrousuario extends AppCompatActivity {
                 String correo = ((EditText) findViewById(R.id.correo)).getText().toString().trim();
                 String password = ((EditText) findViewById(R.id.contra)).getText().toString().trim();
                 String confpass = ((EditText) findViewById(R.id.confir_contra)).getText().toString().trim();
+                String usuario = ((EditText) findViewById(R.id.usuario)).getText().toString().trim();
 
                 if(password.equals(confpass)){
 
                     Usuario newuser = new Usuario();
                     newuser.setContraseña(password);
                     newuser.setCorreo(correo);
+                    newuser.setUsuario(usuario);
 
                     listausuarios.insertLast(newuser);
                     saveData();
@@ -71,27 +73,122 @@ public class registrousuario extends AppCompatActivity {
 
 
     }
+
+
     private void saveData(){
         SharedPreferences sharedPreferences = getSharedPreferences("shared preferences", MODE_PRIVATE);
+
         SharedPreferences.Editor editor = sharedPreferences.edit();
 
-        editor.remove("usuario list").commit();
-        Gson gson = new Gson();
-        String json = gson.toJson(listausuarios);
-        editor.putString("usuario list", json);
+        editor.remove("usuarios list");
+        String ususString = "";
+
+        for(int i = 0 ; i < listausuarios.length;i++){
+
+            Usuario usu = listausuarios.getValue(i);
+            ususString = ususString + UtoString(usu);
+
+        }
+        Toast.makeText(registrousuario.this, "hola "+ususString, Toast.LENGTH_LONG).show();
+        editor.putString("usuarios list", ususString);
         editor.apply();
+
     }
 
     private void loadData(){
         SharedPreferences sharedPreferences = getSharedPreferences("shared preferences", MODE_PRIVATE);
-        Gson gson = new Gson();
-        String json = sharedPreferences.getString("usuario list", null);
-        Type type = new TypeToken<LinkedList<Usuario>>() {}.getType();
-        listausuarios = gson.fromJson(json, type);
 
-        if (listausuarios == null){
-            listausuarios = new LinkedList<Usuario>();
+        String ususString = sharedPreferences.getString("usuarios list", null);
+
+        if(ususString == null){
+            listausuarios = new LinkedList<>();
+        }else {
+            listausuarios = UtoLinkedList(ususString);
         }
+
+    }
+
+    public static Usuario UfromString(String usuString){
+
+        int i = 0;
+        String correo = "";
+        String contraseña = "";
+        String usuario = "";
+
+
+        while(!Character.toString(usuString.charAt(i)).equals(">")){
+            correo = correo + usuString.charAt(i);
+            i++;
+        }
+        i++;
+        while(!Character.toString(usuString.charAt(i)).equals("]")){
+            contraseña = contraseña + usuString.charAt(i);
+            i++;
+        }
+        i++;
+        while(!Character.toString(usuString.charAt(i)).equals(")")){
+            usuario = usuario + usuString.charAt(i);
+            i++;
+        }
+        i++;
+
+        Usuario usu = new Usuario();
+        usu.setCorreo(correo);
+        usu.setContraseña(contraseña);
+        usu.setUsuario(usuario);
+        return usu;
+
+
+    }
+
+    public static String UtoString(Usuario usu){
+
+        String usuString = "";
+
+        String correo = usu.getCorreo();
+        String contraseña = usu.getContraseña();
+        String usuario = usu.getUsuario();
+
+        usuString = usuString +"{" + correo+ ">" + contraseña+ "]"  + usuario + ")";
+
+        usuString = usuString + "}";
+
+
+
+
+        return usuString;
+
+    }
+
+    public static LinkedList<Usuario> UtoLinkedList(String fullString){
+
+
+        int j = 0;
+
+        LinkedList<Usuario> pruebalinked = new LinkedList<Usuario>();
+
+        while(j < fullString.length()){
+
+            if(Character.toString(fullString.charAt(j)).equals("{")){
+
+
+                String usuList = "";
+                j++;
+                while(!Character.toString(fullString.charAt(j)).equals("}")){
+                    usuList = usuList+fullString.charAt(j);
+                    j++;
+
+                }
+
+                Usuario usu = new Usuario();
+                usu = UfromString(usuList);
+
+                pruebalinked.insertLast(usu);
+            }
+            j++;
+        }
+
+        return pruebalinked;
 
     }
 

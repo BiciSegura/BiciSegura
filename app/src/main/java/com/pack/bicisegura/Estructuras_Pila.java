@@ -14,4 +14,5 @@ public class Estructuras_Pila<E> extends LinkedList {
         this.insertFirst(element);
     }
 
+
 }
