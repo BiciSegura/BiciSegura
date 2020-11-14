@@ -40,34 +40,47 @@ public class registrousuario extends AppCompatActivity {
                 String confpass = ((EditText) findViewById(R.id.confir_contra)).getText().toString().trim();
                 String usuario = ((EditText) findViewById(R.id.usuario)).getText().toString().trim();
 
-                if(password.equals(confpass)){
 
-                    Usuario newuser = new Usuario();
-                    newuser.setContraseña(password);
-                    newuser.setCorreo(correo);
-                    newuser.setUsuario(usuario);
+                if(correo.length() != 0 && password.length() !=  0 && usuario.length() != 0){
+                    if(password.equals(confpass)){
 
-                    listausuarios.insertLast(newuser);
-                    saveData();
-                    Toast.makeText(registrousuario.this, "Su usuario se registró correctamente", Toast.LENGTH_LONG).show();
+                        Usuario newuser = new Usuario();
+                        newuser.setContraseña(password);
+                        newuser.setCorreo(correo);
+                        newuser.setUsuario(usuario);
 
-                    Intent reg = new Intent(registrousuario.this, inicia_Pestañas.class);
-                    startActivity(reg);
+                        listausuarios.insertLast(newuser);
+                        saveData();
 
+                        SharedPreferences sharedPreferences = getSharedPreferences("shared preferences", MODE_PRIVATE);
+                        SharedPreferences.Editor editor2 = sharedPreferences.edit();
+                        editor2.putString("usuario", usuario);
+                        editor2.apply();
+
+                        Toast.makeText(registrousuario.this, "Su usuario se registró correctamente", Toast.LENGTH_LONG).show();
+
+                        Intent reg = new Intent(registrousuario.this, inicia_Pestañas.class);
+                        startActivity(reg);
+
+                    }
+
+                    else{
+                        Toast.makeText(registrousuario.this, "Por favor confirmar su contraseña correctamente", Toast.LENGTH_LONG).show();
+                    }
                 }
 
                 else{
-                    Toast.makeText(registrousuario.this, "Por favor confirmar su contraseña correctamente", Toast.LENGTH_LONG).show();
+                    Toast.makeText(registrousuario.this, "Por favor llenar los campos obligatorios", Toast.LENGTH_LONG).show();
+
                 }
+
+
 
                 //Próximamente?:
                 /*String Usuario = ((EditText) findViewById(R.id.usuario)).getText().toString().trim();
                 String Ciudad = ((EditText) findViewById(R.id.ciudad)).getText().toString().trim();
                 String Telefono = ((EditText) findViewById(R.id.tel)).getText().toString().trim();*/
 
-
-                //Intent reg = new Intent(registrousuario.this, algo.class);
-                //startActivity(reg);
             }
         });
 
@@ -89,7 +102,6 @@ public class registrousuario extends AppCompatActivity {
             ususString = ususString + UtoString(usu);
 
         }
-        Toast.makeText(registrousuario.this, "hola "+ususString, Toast.LENGTH_LONG).show();
         editor.putString("usuarios list", ususString);
         editor.apply();
 

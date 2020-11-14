@@ -24,6 +24,9 @@ public class denunciar extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.denunciar);
 
+        SharedPreferences sharedPreferences = getSharedPreferences("shared preferences", MODE_PRIVATE);
+        final String usuario = sharedPreferences.getString("usuario", null);
+
         loadData();
 
 
@@ -39,7 +42,7 @@ public class denunciar extends AppCompatActivity {
                 Denuncia denuncia = new Denuncia();
                 denuncia.setHora(Hora);
                 denuncia.setLugar(Lugar);
-                denuncia.setUsuario("Pepito");
+                denuncia.setUsuario(usuario);
 
                 //Guardar Hora y lugar en alguna parte
 
@@ -70,7 +73,6 @@ public class denunciar extends AppCompatActivity {
             densString = densString + toString(den);
 
         }
-        Toast.makeText(denunciar.this, "hola "+densString, Toast.LENGTH_LONG).show();
         editor.putString("denuncia list", densString);
         editor.apply();
 

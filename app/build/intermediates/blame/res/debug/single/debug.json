@@ -1,278 +1,278 @@
 [
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_mas.png.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_mas.png"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_exclam.xml.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_exclam.xml"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_exclam.xml.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_exclam.xml"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\layout_registro.xml.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\src\\main\\res\\layout\\registro.xml"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_gorilaencicla.jpg.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\src\\main\\res\\drawable-v24\\gorilaencicla.jpg"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_exclam.png.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_exclam.png"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_person.png.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_person.png"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_mas.png.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_mas.png"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_cruz.png.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_cruz.png"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable_borde_textos.xml.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\src\\main\\res\\drawable\\borde_textos.xml"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_loc.png.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_loc.png"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_loc.png.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_loc.png"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_mas.png.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_mas.png"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_bicisegura_logo.jpg.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\src\\main\\res\\drawable-v24\\bicisegura_logo.jpg"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\layout_pestanas.xml.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\src\\main\\res\\layout\\pestanas.xml"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_exclam.png.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_exclam.png"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_cruz.png.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_cruz.png"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_person.xml.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_person.xml"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable_delinear_boton.xml.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\src\\main\\res\\drawable\\delinear_boton.xml"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_cruz.xml.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_cruz.xml"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_loc.png.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_loc.png"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable_delinear_boton2.xml.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\src\\main\\res\\drawable\\delinear_boton2.xml"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_mas.png.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_mas.png"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_loc.png.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_loc.png"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_mas.png.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_mas.png"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_person.png.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_person.png"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\layout_eliminar_denuncia.xml.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\src\\main\\res\\layout\\eliminar_denuncia.xml"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_mis_denuncias.xml.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\src\\main\\res\\layout\\fragment_mis_denuncias.xml"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_mas.png.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_mas.png"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_loc.png.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_loc.png"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_mas.png.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_mas.png"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_mas.xml.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_mas.xml"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_person.png.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_person.png"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_loc.png.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_loc.png"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable_redondear_boton_solid.xml.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\src\\main\\res\\drawable\\redondear_boton_solid.xml"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_cruz.png.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_cruz.png"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_loc.png.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_loc.png"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_loc.png.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_loc.png"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_loc.xml.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_loc.xml"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_person.png.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_person.png"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_exclam.png.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_exclam.png"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable_redondear_boton_solid.xml.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\src\\main\\res\\drawable\\redondear_boton_solid.xml"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\layout_denunciar.xml.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\src\\main\\res\\layout\\denunciar.xml"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_person.png.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_person.png"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_cruz.png.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_cruz.png"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_cruz.png.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_cruz.png"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_exclam.png.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_exclam.png"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_denuncias_recientes.xml.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\src\\main\\res\\layout\\fragment_denuncias_recientes.xml"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\layout_elemento_listas_denuncia.xml.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\src\\main\\res\\layout\\elemento_listas_denuncia.xml"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_cruz.xml.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_cruz.xml"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_person.png.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_person.png"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_cruz.png.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_cruz.png"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_loc.png.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_loc.png"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\layout_eliminar_denuncia.xml.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\src\\main\\res\\layout\\eliminar_denuncia.xml"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_cruz.png.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_cruz.png"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\layout_elemento_listas_denuncia.xml.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\src\\main\\res\\layout\\elemento_listas_denuncia.xml"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable_delinear_boton2.xml.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\src\\main\\res\\drawable\\delinear_boton2.xml"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_person.png.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_person.png"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_person.png.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_person.png"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_loc.png.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_loc.png"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_loc.png.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_loc.png"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_exclam.png.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_exclam.png"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_bicisegura_logo.jpg.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\src\\main\\res\\drawable-v24\\bicisegura_logo.jpg"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_exclam.png.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_exclam.png"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_exclam.png.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_exclam.png"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_gorilaencicla.jpg.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\src\\main\\res\\drawable-v24\\gorilaencicla.jpg"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_person.png.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_person.png"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_cruz.png.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_cruz.png"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_mas.png.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_mas.png"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_mas.png.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_mas.png"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_loc.xml.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_loc.xml"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_denuncias_recientes.xml.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\src\\main\\res\\layout\\fragment_denuncias_recientes.xml"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_mas.png.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_mas.png"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\layout_denunciar.xml.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\src\\main\\res\\layout\\denunciar.xml"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_cruz.png.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_cruz.png"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_mas.xml.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_mas.xml"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable_delinear_boton.xml.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\src\\main\\res\\drawable\\delinear_boton.xml"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\layout_pestanas.xml.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\src\\main\\res\\layout\\pestanas.xml"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\layout_registro.xml.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\src\\main\\res\\layout\\registro.xml"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_cruz.png.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_cruz.png"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_mas.png.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_mas.png"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_exclam.png.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_exclam.png"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_exclam.png.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_exclam.png"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_person.png.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_person.png"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_exclam.png.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_exclam.png"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_person.xml.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_person.xml"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_exclam.png.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_exclam.png"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_cruz.png.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_cruz.png"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_mis_denuncias.xml.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\src\\main\\res\\layout\\fragment_mis_denuncias.xml"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_person.png.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_person.png"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_person.png.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_person.png"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_exclam.png.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_exclam.png"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable_borde_textos.xml.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\src\\main\\res\\drawable\\borde_textos.xml"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_mas.png.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_mas.png"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_loc.png.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_loc.png"
     },
     {
-        "merged": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_cruz.png.flat",
-        "source": "C:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_cruz.png"
+        "merged": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     }
 ]

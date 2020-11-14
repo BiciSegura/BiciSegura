@@ -30,6 +30,7 @@ public class denuncias_recientes extends Fragment{
 
     private ListView mListView;
     LinkedList<Denuncia> ListaDenuncias;
+    Boolean bool = false;
 
     LinkedList<Denuncia> lanuevalista = new LinkedList<Denuncia>();
 
@@ -39,7 +40,6 @@ public class denuncias_recientes extends Fragment{
         super.onActivityCreated(savedInstanceState);
 
         loadData();
-
 
        /* lanuevalista.fillList(1000);*/
 
@@ -70,30 +70,48 @@ public class denuncias_recientes extends Fragment{
 
         Button buscar = getView().findViewById(R.id.buscar);
 
-        buscar.setOnClickListener(new View.OnClickListener() {
+        /*buscar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String Lugar = ((EditText) getView().findViewById(R.id.buscar_por_hora)).getText().toString().trim();
                 String Hora = ((EditText) getView().findViewById(R.id.buscar_por_lugar)).getText().toString().trim();
                 Toast.makeText(getActivity(), "Falta por implementar", Toast.LENGTH_LONG).show();
-                while(lanuevalista.getFirst() != null){
 
-                    Denuncia den = lanuevalista.getFirst();
+                int i = 0;
+
+                while(i < lanuevalista.length()){
+
+                    Denuncia den = lanuevalista.getValue(i);
                     lanuevalista.deleteFirst();
 
                     String hora = den.getHora();
                     String lugar = den.getLugar();
                     String usuario = den.getUsuario();
-                    /*
-                    mLista.add(new Denuncia(hora,lugar,usuario));
-                    mAdapter = new CustomAdapter_Denuncias(requireActivity().getApplicationContext(), R.layout.elemento_listas_denuncia,mLista);
-                    mListView.setAdapter(mAdapter);*/
+
+                    bool = true;
+
                 }
 
 
             }
-        });
+        });*/
 
+        Button volver = getView().findViewById(R.id.volver);
+
+        volver.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if(bool){
+                    Intent reg = new Intent(getActivity(), inicia_Pestañas.class);
+                    getActivity().startActivity(reg);
+                }
+                else{
+                    Toast.makeText(getActivity(), "Ya se están viendo todas las denuncias", Toast.LENGTH_LONG).show();
+                }
+
+            }
+        });
     }
 
 
@@ -109,12 +127,31 @@ public class denuncias_recientes extends Fragment{
     private void loadData(){
         SharedPreferences sharedPreferences = this.getActivity().getSharedPreferences("shared preferences", Context.MODE_PRIVATE);
 
-        String densString = sharedPreferences.getString("denuncia list", null);
+        String densString = sharedPreferences.getString( "denuncia list", null);
         if(densString == null){
             ListaDenuncias = new LinkedList<>();
         }else {
             ListaDenuncias = toLinkedList(densString);
         }
+
+    }
+    private void saveData(){
+        SharedPreferences sharedPreferences = this.getActivity().getSharedPreferences("shared preferences", Context.MODE_PRIVATE);
+
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+
+        editor.remove( "denuncia list");
+        String densString = "";
+
+        for(int i = 0 ; i < ListaDenuncias.length;i++){
+
+            Denuncia den = ListaDenuncias.getValue(i);
+            densString = densString + toString(den);
+
+        }
+
+        editor.putString( "denuncia list", densString);
+        editor.apply();
 
     }
 

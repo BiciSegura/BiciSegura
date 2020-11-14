@@ -24,6 +24,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        SharedPreferences sharedPreferences = getSharedPreferences("shared preferences", MODE_PRIVATE);
+        SharedPreferences.Editor editor1 = sharedPreferences.edit();
+        editor1.remove("usuario");
+        editor1.apply();
+
         loadData();
 
         Button registro = findViewById(R.id.registro);
@@ -56,6 +61,11 @@ public class MainActivity extends AppCompatActivity {
                 }else{
                     for(int i=0; i < listausuarios.length ; i++){
                         if(usuariosiguales(aux.value, us)){
+
+                            SharedPreferences sharedPreferences = getSharedPreferences("shared preferences", MODE_PRIVATE);
+                            SharedPreferences.Editor editor2 = sharedPreferences.edit();
+                            editor2.putString("usuario", aux.value.getUsuario());
+                            editor2.apply();
                             Intent reg = new Intent(MainActivity.this, inicia_Pestañas.class);
                             startActivity(reg);
                             break;
