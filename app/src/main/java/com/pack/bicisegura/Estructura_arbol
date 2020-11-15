@@ -1,4 +1,5 @@
 package com.pack.bicisegura;
+//import java.util.math;
 
  class NodoAvl<E extends Comparable<?super E>>{
     public E value;
@@ -41,26 +42,27 @@ package com.pack.bicisegura;
      public int altura(NodoAvl root){
 
          if(this.root != null){
-
-             if(this.root.left != null ){
+                return 1 + Math.max(altura(root.left), altura(root.rigth));
+            /* if(this.root.left != null ){
                  heigthleft += 1;
                  altura(root.left);}
              else if(this.root.rigth != null ){
                  heigthrigth += 1;
-                 altura(root.left);}
+                 altura(root.left);}*/
 
          }else{
-             if(heigthleft > heigthrigth){
+             return 0;
+             /*if(heigthleft > heigthrigth){
                  root.heigth=heigthleft;
              }else if (heigthleft == heigthrigth){
                  root.heigth=heigthleft;
 
              }else {
                  root.heigth=heigthrigth;
-             }
+             }*/
 
          }
-         return root.heigth;
+         //return root.heigth;
 
      }
      public void insert(E value){
@@ -102,9 +104,32 @@ package com.pack.bicisegura;
         return result;
 
     }*/
-     public void remove(E value){
+     /*public void remove(E value){
 
+     }*/
+    public void remove( E x )
+    {
+        root = remove( x, root );
+    }
+
+     private NodoAvl<E> remove( E x, NodoAvl<E> t )
+     { if( t == null )
+
+         return t; // Item not found; do nothing
+         int compareResult = x.compareTo( t.value );
+         if( compareResult < 0 )
+             t.left = remove( x, t.left );
+         else if( compareResult > 0 )
+             t.rigth = remove( x, t.rigth );
+         else if( t.left != null && t.rigth != null ) // Two children
+         { t.value = findMin( t.rigth ).value;
+             t.rigth = remove( t.value, t.rigth );
+         }
+         else
+             t = ( t.left != null ) ? t.left : t.rigth;
+         return t;
      }
+
 
      public E findMin(){
          return this.findMin(this.root).value;
@@ -178,8 +203,18 @@ package com.pack.bicisegura;
              return false;
          }
 
+     }
+     private void SigleRotateRight (NodoAvl<E> node){
 
+     }
+     private void SingleRotateLeft (NodoAvl<E> node){
+
+     }
+     private void DobleRotateRigth(NodoAvl<E> node){
+
+     }
+     private void DobleRotateLeft(NodoAvl<E> node){
 
      }
 
-}
+ }

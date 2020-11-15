@@ -1,9 +1,11 @@
 package com.pack.bicisegura;
 
-public class Denuncia{
+public class Denuncia implements Comparable<Object> {
     private String lugar;
     private String hora;
     private String usuario;
+    private Localidad localidad;
+
 
     public String getLugar() {
         return lugar;
@@ -37,5 +39,11 @@ public class Denuncia{
     }
     public Denuncia(){
 
+    }
+
+    @Override
+    public int compareTo(Object o) {
+
+        return 0;
     }
 }
