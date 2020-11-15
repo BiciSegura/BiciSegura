@@ -1,0 +1,4 @@
+#Sat Nov 14 16:09:35 COT 2020
+base.0=C\:\\Users\\Diego\\AndroidStudioProjects\\BiciSegura\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

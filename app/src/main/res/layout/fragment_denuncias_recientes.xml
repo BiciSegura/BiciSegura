@@ -10,7 +10,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
         android:orientation="vertical"
@@ -27,7 +27,7 @@
             <ListView
                 android:id="@+id/listView"
                 android:layout_width="match_parent"
-                android:layout_height="440dp"
+                android:layout_height="380dp"
                 android:layout_marginBottom="10dp"
                 android:divider="@android:color/transparent"
                 android:dividerHeight="10.0sp"
@@ -78,6 +78,17 @@
                     android:layout_marginBottom="0dp"
                     android:background="@drawable/delinear_boton2"
                     android:text="Buscar" />
+
+                <Button
+                    android:id="@+id/volver"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="@drawable/delinear_boton2"
+                    android:text="Ver Todas las Denuncias" />
 
             </LinearLayout>
         </LinearLayout>
