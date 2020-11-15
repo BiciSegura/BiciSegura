@@ -41,11 +41,12 @@ package com.pack.bicisegura;
 //METODO PARA HALLAR LA ALTURA DE UN ARBOL
      public int altura(NodoAvl root){
 
-         if(this.root != null){
+        /* if(this.root != null){
                 return 1 + Math.max(altura(root.left), altura(root.rigth));
          }else{
              return 0;
-         }
+         }*/
+         return root == null ? -1 : root.heigth;
      }
      public void insert(E value){
          this.root = this.insert(value, this.root);
