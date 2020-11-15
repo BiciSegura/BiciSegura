@@ -43,7 +43,7 @@ public class eliminar_denuncia extends AppCompatActivity {
                 Toast.makeText(eliminar_denuncia.this, "Su denuncia fue eliminada", Toast.LENGTH_LONG).show();
 
 
-                Intent reg = new Intent(eliminar_denuncia.this, inicia_Pestañas.class);
+                Intent reg = new Intent(eliminar_denuncia.this, Barra_Lateral.class);
                 startActivity(reg);
 
             }

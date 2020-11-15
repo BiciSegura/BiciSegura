@@ -29,9 +29,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.pack.bicisegura.registrousuario" >
+        <activity
+            android:name="com.pack.bicisegura.Barra_Lateral"
+            android:theme="@style/AppTheme.NoActionBar" >
         </activity>
-        <activity android:name="com.pack.bicisegura.inicia_Pestañas" >
+        <activity android:name="com.pack.bicisegura.registrousuario" >
         </activity>
         <activity android:name="com.pack.bicisegura.denunciar" >
         </activity>

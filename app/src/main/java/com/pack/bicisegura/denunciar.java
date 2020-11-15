@@ -68,7 +68,7 @@ public class denunciar extends AppCompatActivity {
                 Toast.makeText(denunciar.this, "Se guardó su denuncia", Toast.LENGTH_LONG).show();
 
 
-                Intent reg = new Intent(denunciar.this, inicia_Pestañas.class);
+                Intent reg = new Intent(denunciar.this, Barra_Lateral.class);
                 startActivity(reg);
 
             }

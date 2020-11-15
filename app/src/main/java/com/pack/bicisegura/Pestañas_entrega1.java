@@ -17,7 +17,7 @@ import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayout.OnTabSelectedListener;
 
-public class Pestañas extends Fragment {
+public class Pestañas_entrega1 extends Fragment {
     TabItem recientes, denuncias;
     ViewPager viewPager;
     TabLayout tablayout;
@@ -27,7 +27,7 @@ public class Pestañas extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.pestanas, container, false);
+        View view = inflater.inflate(R.layout.pestanas_entrega1, container, false);
 
         tablayout = view.findViewById(R.id.tab_layout);
         //tablayout.setTabMode(TabLayout.MODE_SCROLLABLE);

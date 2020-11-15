@@ -103,7 +103,7 @@ public class denuncias_recientes extends Fragment{
             public void onClick(View v) {
 
                 if(bool){
-                    Intent reg = new Intent(getActivity(), inicia_Pestañas.class);
+                    Intent reg = new Intent(getActivity(), Barra_Lateral.class);
                     getActivity().startActivity(reg);
                 }
                 else{
