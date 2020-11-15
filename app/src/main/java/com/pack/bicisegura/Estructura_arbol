@@ -43,27 +43,9 @@ package com.pack.bicisegura;
 
          if(this.root != null){
                 return 1 + Math.max(altura(root.left), altura(root.rigth));
-            /* if(this.root.left != null ){
-                 heigthleft += 1;
-                 altura(root.left);}
-             else if(this.root.rigth != null ){
-                 heigthrigth += 1;
-                 altura(root.left);}*/
-
          }else{
              return 0;
-             /*if(heigthleft > heigthrigth){
-                 root.heigth=heigthleft;
-             }else if (heigthleft == heigthrigth){
-                 root.heigth=heigthleft;
-
-             }else {
-                 root.heigth=heigthrigth;
-             }*/
-
          }
-         //return root.heigth;
-
      }
      public void insert(E value){
          this.root = this.insert(value, this.root);
@@ -81,32 +63,11 @@ package com.pack.bicisegura;
                  node.rigth = this.insert(value, node.left);
              } // < -1
              else {}
-             return node; // == 0
+             return balanceo(node); // == 0
          }
      }
 
-    /*public E findmind(Estructura_arbol root){
-        E result=null;
-        // caso de un arbol con tan solo dos hijos
-        if(this.root.left.value > this.root.value && this.root.value < this.root.rigth.value ){
-            result = this.root.value;
-            return result;
-        }
-        while(root != null){
-            if (this.root.left.value < this.root.rigth.value){
-                result= this.root.left.value;
-                root = this.root.left.value;
-            }else{
-                result = this.root.value;
 
-            }
-        }
-        return result;
-
-    }*/
-     /*public void remove(E value){
-
-     }*/
     public void remove( E x )
     {
         root = remove( x, root );
@@ -127,7 +88,7 @@ package com.pack.bicisegura;
          }
          else
              t = ( t.left != null ) ? t.left : t.rigth;
-         return t;
+         return balanceo(t);
      }
 
 
@@ -153,9 +114,7 @@ package com.pack.bicisegura;
              return this.findMin(node.rigth);
      }
 
-     //public boolean contains(T value){
 
-     //}
 
      public void makeEmpty(){
          this.root = null;
@@ -165,25 +124,7 @@ package com.pack.bicisegura;
          return this.root == null;
      }
 
-    /*public E findmax(Estructura_arbol root){
-        E result=null;
-        // caso de un arbol con tan solo dos hijos
-        if(this.root.left.value < this.root.value && this.root.value > this.root.rigth.value ){
-            result = this.root.value;
-            return result;
-        }
-        while(root != null){
-            if (this.root.left.value < this.root.rigth.value){
-                result= this.root.rigth.value;
-                root = this.root.rigth.value;
-            }else{
-                result = this.root.value;
 
-            }
-        }
-        return result;
-
-    }*/
 
      private boolean findValue(E value, NodoAvl<E> node){
 
@@ -204,16 +145,56 @@ package com.pack.bicisegura;
          }
 
      }
-     private void SigleRotateRight (NodoAvl<E> node){
+     private static final int ALLOWED_IMBALANCE = 1;
+
+     private NodoAvl<E> balanceo(NodoAvl<E> node){
+         if( node == null )
+             return node;
+
+          if( altura( node.left ) - altura( node.rigth ) > ALLOWED_IMBALANCE )
+              if( altura( node.left.left ) >= altura( node.left.rigth) )
+                  node = SingleRotateLeft( node );
+              else
+                  node = DobleRotateLeft( node );
+           else
+              if( altura( node.rigth ) - altura( node.left ) > ALLOWED_IMBALANCE )
+                  if( altura( node.rigth.rigth ) >= altura( node.rigth.left ) )
+                  node = SingleRotateRight( node );
+          else
+          node = DobleRotateRigth( node );
+
+          node.heigth = Math.max( altura( node.left ), altura( node.rigth ) ) + 1;
+           return node;
 
      }
-     private void SingleRotateLeft (NodoAvl<E> node){
+
+     private NodoAvl<E> SingleRotateRight (NodoAvl<E> node){
+         NodoAvl<E> aux = node.rigth;
+         node.rigth = aux.left;
+         aux.left = node;
+         node.heigth = Math.max( altura( node.left ), altura( node.rigth ) ) + 1;
+         aux.heigth = Math.max( altura( aux.left ), node.heigth ) + 1;
+         return aux;
 
      }
-     private void DobleRotateRigth(NodoAvl<E> node){
+     private NodoAvl<E> SingleRotateLeft (NodoAvl<E> node){
+
+          NodoAvl<E> aux = node.left;
+          node.left = aux.rigth;
+          aux.rigth = node;
+          node.heigth = Math.max( altura( node.left ), altura( node.rigth ) ) + 1;
+          aux.heigth = Math.max( altura( aux.left ), node.heigth ) + 1;
+          return aux;
 
      }
-     private void DobleRotateLeft(NodoAvl<E> node){
+     private NodoAvl<E> DobleRotateRigth(NodoAvl<E> node){
+         node.rigth = SingleRotateLeft( node.rigth );
+         return SingleRotateRight( node );
+
+     }
+     private NodoAvl<E> DobleRotateLeft(NodoAvl<E> node){
+         node.left = SingleRotateRight( node.left );
+          return SingleRotateLeft( node );
 
      }
 
