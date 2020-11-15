@@ -33,8 +33,7 @@ public class denuncias_recientes extends Fragment{
     Boolean bool = false;
 
     LinkedList<Denuncia> lanuevalista = new LinkedList<Denuncia>();
-
-
+    
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
@@ -57,8 +56,9 @@ public class denuncias_recientes extends Fragment{
                 String hora = den.getHora();
                 String lugar = den.getLugar();
                 String usuario = den.getUsuario();
+                String localidad = den.getLocalidad();
 
-                mLista.add(new Denuncia(lugar,hora,usuario));
+                mLista.add(new Denuncia(lugar,hora,usuario, localidad));
                 mAdapter = new CustomAdapter_Denuncias(requireActivity().getApplicationContext(), R.layout.elemento_listas_denuncia,mLista);
                 mListView.setAdapter(mAdapter);
 
@@ -114,9 +114,6 @@ public class denuncias_recientes extends Fragment{
         });
     }
 
-
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -155,59 +152,6 @@ public class denuncias_recientes extends Fragment{
 
     }
 
-    public static Denuncia fromString(String denString){
-
-        int i = 0;
-        String hora = "";
-        String lugar = "";
-        String usuario = "";
-
-
-        while(!Character.toString(denString.charAt(i)).equals(">")){
-            hora = hora + denString.charAt(i);
-            i++;
-        }
-        i++;
-        while(!Character.toString(denString.charAt(i)).equals("]")){
-            lugar = lugar + denString.charAt(i);
-            i++;
-        }
-        i++;// hable mas bien para ir haciendo las cosas en conjunto mas rapido
-        while(!Character.toString(denString.charAt(i)).equals(")")){
-            usuario = usuario + denString.charAt(i);
-            i++;
-        }
-        i++;
-
-        Denuncia den = new Denuncia();
-        den.setLugar(lugar);
-        den.setUsuario(usuario);
-        den.setHora(hora);
-
-        return den;
-
-
-    }
-
-    public static String toString(Denuncia den){
-
-        String denString = "";
-
-        String Hora = den.getHora();
-        String lugar = den.getLugar();
-        String usuario = den.getUsuario();
-
-        denString = denString +"{" + Hora+ ">" + lugar+ "]"  + usuario + ")";
-
-        denString = denString + "}";
-
-
-
-
-        return denString;
-
-    }
-
     public static LinkedList<Denuncia> toLinkedList(String fullString){
 
 
@@ -237,6 +181,71 @@ public class denuncias_recientes extends Fragment{
         }
 
         return pruebafromstring;
+
+    }
+
+    public static String toString(Denuncia den){
+
+        String denString = "";
+
+        String Hora = den.getHora();
+        String lugar = den.getLugar();
+        String usuario = den.getUsuario();
+        String localidad = den.getLocalidad();
+
+        denString = denString +"{" + Hora+ ">" + lugar+ "]"  + usuario + ")" +localidad+ "?";
+
+        denString = denString + "}";
+
+
+
+
+        return denString;
+
+    }
+
+    //string.indexOf('a')
+
+
+
+    public static Denuncia fromString(String denString){
+
+        int i = 0;
+        String hora = "";
+        String lugar = "";
+        String usuario = "";
+        String localidad = "";
+
+
+        while(!Character.toString(denString.charAt(i)).equals(">")){
+            hora = hora + denString.charAt(i);
+            i++;
+        }
+        i++;
+        while(!Character.toString(denString.charAt(i)).equals("]")){
+            lugar = lugar + denString.charAt(i);
+            i++;
+        }
+        i++;
+        while(!Character.toString(denString.charAt(i)).equals(")")){
+            usuario = usuario + denString.charAt(i);
+            i++;
+        }
+        i++;
+        while(!Character.toString(denString.charAt(i)).equals("?")){
+            localidad = localidad + denString.charAt(i);
+            i++;
+        }
+        i++;
+
+        Denuncia den = new Denuncia();
+        den.setLugar(lugar);
+        den.setUsuario(usuario);
+        den.setHora(hora);
+        den.setLocalidad(localidad);
+
+        return den;
+
 
     }
 

@@ -51,6 +51,10 @@ public class CustomAdapter_Denuncias extends ArrayAdapter<Denuncia>{
         String hora = "Hora:  " + denuncia.getHora();
         textoHora.setText(hora);
 
+        TextView textoLocalidad = view.findViewById((R.id.localidad));
+        String localidad = "Localidad:  " + denuncia.getLocalidad();
+        textoLocalidad.setText(localidad);
+
 
 
         return view;

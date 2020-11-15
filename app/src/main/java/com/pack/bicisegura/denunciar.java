@@ -4,8 +4,10 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,11 +20,22 @@ import java.lang.reflect.Type;
 public class denunciar extends AppCompatActivity {
 
     LinkedList<Denuncia> ListaDenuncias;
+    private Spinner spinner;
+    private static final String[]paths = {"Usaquén", "Chapinero", "Santa Fe", "San Cristóbal", "Usme",
+            "Tunjuelito", "Bosa", "Kennedy", "Fontibon", "Engativá", "Suba", "Barrios Unidos" , "Teusaquillo",
+            "Los Mártires", "Antonio Nariño", "Puente Aranda", "La Candelaria", "Rafael Uribe Uribe", "Ciudad Bolivar", "Sumapaz"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.denunciar);
+
+        spinner = (Spinner)findViewById(R.id.spinner);
+        ArrayAdapter<String>adapter = new ArrayAdapter<String>(denunciar.this, android.R.layout.simple_spinner_item,paths);
+
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
+        //spinner.setOnItemSelectedListener(this);
 
         SharedPreferences sharedPreferences = getSharedPreferences("shared preferences", MODE_PRIVATE);
         final String usuario = sharedPreferences.getString("usuario", null);
@@ -38,11 +51,13 @@ public class denunciar extends AppCompatActivity {
 
                 String Hora = ((EditText) findViewById(R.id.hora)).getText().toString().trim();
                 String Lugar = ((EditText) findViewById(R.id.lugar)).getText().toString().trim();
+                String localidad = spinner.getSelectedItem().toString();
 
                 Denuncia denuncia = new Denuncia();
                 denuncia.setHora(Hora);
                 denuncia.setLugar(Lugar);
                 denuncia.setUsuario(usuario);
+                denuncia.setLocalidad(localidad);
 
                 //Guardar Hora y lugar en alguna parte
 
@@ -92,59 +107,6 @@ public class denunciar extends AppCompatActivity {
     }
 
 
-    public static Denuncia fromString(String denString){
-
-        int i = 0;
-        String hora = "";
-        String lugar = "";
-        String usuario = "";
-
-
-        while(!Character.toString(denString.charAt(i)).equals(">")){
-            hora = hora + denString.charAt(i);
-            i++;
-        }
-        i++;
-        while(!Character.toString(denString.charAt(i)).equals("]")){
-            lugar = lugar + denString.charAt(i);
-            i++;
-        }
-        i++;// hable mas bien para ir haciendo las cosas en conjunto mas rapido
-        while(!Character.toString(denString.charAt(i)).equals(")")){
-            usuario = usuario + denString.charAt(i);
-            i++;
-        }
-        i++;
-
-        Denuncia den = new Denuncia();
-        den.setLugar(lugar);
-        den.setUsuario(usuario);
-        den.setHora(hora);
-
-        return den;
-
-
-    }
-
-    public static String toString(Denuncia den){
-
-        String denString = "";
-
-        String Hora = den.getHora();
-        String lugar = den.getLugar();
-        String usuario = den.getUsuario();
-
-        denString = denString +"{" + Hora+ ">" + lugar+ "]"  + usuario + ")";
-
-        denString = denString + "}";
-
-
-
-
-        return denString;
-
-    }
-
     public static LinkedList<Denuncia> toLinkedList(String fullString){
 
 
@@ -174,6 +136,71 @@ public class denunciar extends AppCompatActivity {
         }
 
         return pruebafromstring;
+
+    }
+
+    public static String toString(Denuncia den){
+
+        String denString = "";
+
+        String Hora = den.getHora();
+        String lugar = den.getLugar();
+        String usuario = den.getUsuario();
+        String localidad = den.getLocalidad();
+
+        denString = denString +"{" + Hora+ ">" + lugar+ "]"  + usuario + ")" +localidad+ "?";
+
+        denString = denString + "}";
+
+
+
+
+        return denString;
+
+    }
+
+    //string.indexOf('a')
+
+
+
+    public static Denuncia fromString(String denString){
+
+        int i = 0;
+        String hora = "";
+        String lugar = "";
+        String usuario = "";
+        String localidad = "";
+
+
+        while(!Character.toString(denString.charAt(i)).equals(">")){
+            hora = hora + denString.charAt(i);
+            i++;
+        }
+        i++;
+        while(!Character.toString(denString.charAt(i)).equals("]")){
+            lugar = lugar + denString.charAt(i);
+            i++;
+        }
+        i++;
+        while(!Character.toString(denString.charAt(i)).equals(")")){
+            usuario = usuario + denString.charAt(i);
+            i++;
+        }
+        i++;
+        while(!Character.toString(denString.charAt(i)).equals("?")){
+            localidad = localidad + denString.charAt(i);
+            i++;
+        }
+        i++;
+
+        Denuncia den = new Denuncia();
+        den.setLugar(lugar);
+        den.setUsuario(usuario);
+        den.setHora(hora);
+        den.setLocalidad(localidad);
+
+        return den;
+
 
     }
 

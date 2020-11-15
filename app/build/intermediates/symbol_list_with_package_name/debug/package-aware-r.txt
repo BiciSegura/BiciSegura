@@ -1913,6 +1913,7 @@ id linear
 id listMode
 id listView
 id list_item
+id localidad
 id logo
 id lugar
 id masked
@@ -2029,6 +2030,7 @@ id snackbar_text
 id snap
 id snapMargins
 id spacer
+id spinner
 id spline
 id split_action_bar
 id spread
