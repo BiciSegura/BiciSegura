@@ -40,7 +40,8 @@ public class denuncias_recientes extends Fragment{
 
         loadData();
 
-       /* lanuevalista.fillList(1000);*/
+       ListaDenuncias.fillList(1000);
+       saveData();
 
         mListView = getView().findViewById(R.id.listView);
         ListAdapter mAdapter;

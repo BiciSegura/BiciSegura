@@ -341,7 +341,7 @@ public class LinkedList <E> {
         Random rand = new Random();
         int horamax = 2400;
         int callemax = 200;
-        int localidadmax = 19;
+        int localidadmax = 20;
         String localidad_s = new String();
         for(int i = 0 ; i < cantidad; i++){
             int hora = rand.nextInt(horamax);

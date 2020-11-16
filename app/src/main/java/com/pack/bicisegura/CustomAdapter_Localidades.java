@@ -1,4 +1,5 @@
 package com.pack.bicisegura;
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -25,6 +26,7 @@ public class CustomAdapter_Localidades extends ArrayAdapter<Localidad>{
         this.resourceLayout = resource;
     }
 
+    @SuppressLint("SetTextI18n")
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
@@ -34,14 +36,14 @@ public class CustomAdapter_Localidades extends ArrayAdapter<Localidad>{
 
         Localidad localidad = lista.get(position); //Ajustar nombre del método al que sea establecido eventualmente.
 
-
+        String Numint = Integer.toString(localidad.getNumeroRobos());
 
         TextView textoLocal = view.findViewById((R.id.nombre_localidad));
         String nombrelocalidad = "Localidad:  " + localidad.getNombre();
         textoLocal.setText(nombrelocalidad);
 
-        TextView textoNum = view.findViewById((R.id.lugar));
-        textoNum.setText("Número de robos:  "+localidad.getNumeroRobos());
+        TextView textoNum = view.findViewById((R.id.número_denuncias));
+        textoNum.setText("Número de robos:  "+ Numint);
 
 
         return view;

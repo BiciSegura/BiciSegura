@@ -3,6 +3,7 @@ package com.pack.bicisegura;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.strictmode.WebViewMethodCalledOnWrongThreadViolation;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -62,14 +63,15 @@ public class Menos_Peligrosas extends Fragment{
         ListAdapter mAdapter;
         List<Localidad> mLista = new ArrayList<>();
 
-        while(!MenosR.isEmpty()){
+
+        while(MenosR.tamañoActual != 0){
 
             Localidad loca = MenosR.deleteMin();
             String nombre = loca.getNombre();
             int num = loca.getNumeroRobos();
-
-
             mLista.add(new Localidad(nombre,num));
+
+            System.out.println(nombre + num);
             mAdapter = new CustomAdapter_Localidades(requireActivity().getApplicationContext(), R.layout.elemento_listas_localidades,mLista);
             mListView.setAdapter(mAdapter);
         }
