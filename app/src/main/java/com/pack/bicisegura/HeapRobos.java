@@ -2,7 +2,7 @@ package com.pack.bicisegura;
 import java.util.HashMap;
 
 public class HeapRobos {
-    private static final int default_capacity = 10;
+    private static final int default_capacity = 25;
     public int tamañoActual;
     public Localidad[] arr;
     HashMap<String,Integer> posiciones = new HashMap<>();
@@ -36,6 +36,10 @@ public class HeapRobos {
     public Localidad findmin() {
         //HACE FALTA AGREGAR LA EXCEPTION CUANDO ESTA VACIO
         return arr[1];
+    }
+    public boolean isEmpty() {
+        return tamañoActual == 0;
+
     }
     public Localidad deleteMin() {
         Localidad minValue = this.findmin();

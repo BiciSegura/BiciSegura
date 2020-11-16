@@ -26,14 +26,54 @@ public class Menos_Peligrosas extends Fragment{
         super.onActivityCreated(savedInstanceState);
 
         loadData();
+        HeapRobos MenosR = new HeapRobos();
+        MenosR.insert(new Localidad("Usaquén",0));
+        MenosR.insert(new Localidad("Chapinero",0));
+        MenosR.insert(new Localidad("Santa Fe",0));
+        MenosR.insert(new Localidad("San Cristóbal",0));
+        MenosR.insert(new Localidad("Usme",0));
+        MenosR.insert(new Localidad("Tunjuelito",0));
+        MenosR.insert(new Localidad("Bosa",0));
+        MenosR.insert(new Localidad("Kennedy",0));
+        MenosR.insert(new Localidad("Fontibón",0));
+        MenosR.insert(new Localidad("Engativá",0));
+        MenosR.insert(new Localidad("Suba",0));
+        MenosR.insert(new Localidad("Barrios Unidos",0));
+        MenosR.insert(new Localidad("Teusaquillo",0));
+        MenosR.insert(new Localidad("Los Mártires",0));
+        MenosR.insert(new Localidad("Antonio Nariño",0));
+        MenosR.insert(new Localidad("Puente Aranda",0));
+        MenosR.insert(new Localidad("La Candelaria",0));
+        MenosR.insert(new Localidad("Rafael Uribe Uribe",0));
+        MenosR.insert(new Localidad("Ciudad Bolívar",0));
+        MenosR.insert(new Localidad("Sumapaz",0));
 
-       /* lanuevalista.fillList(1000);*/
+
+        for (int i=0; i<ListaDenuncias.length;i++){
+            Denuncia temp = new Denuncia();
+            temp = ListaDenuncias.getValue(i);
+            MenosR.aumento(temp.getLocalidad());
+        }
+
+
+        /* lanuevalista.fillList(1000);*/
 
         mListView = getView().findViewById(R.id.listView);
         ListAdapter mAdapter;
-        List<Denuncia> mLista = new ArrayList<>();
+        List<Localidad> mLista = new ArrayList<>();
 
-        if(ListaDenuncias != null){
+        while(!MenosR.isEmpty()){
+
+            Localidad loca = MenosR.deleteMin();
+            String nombre = loca.getNombre();
+            int num = loca.getNumeroRobos();
+
+
+            mLista.add(new Localidad(nombre,num));
+            mAdapter = new CustomAdapter_Localidades(requireActivity().getApplicationContext(), R.layout.elemento_listas_localidades,mLista);
+            mListView.setAdapter(mAdapter);
+        }
+
 
             /*while(ListaDenuncias.getFirst() != null){
 
@@ -51,7 +91,7 @@ public class Menos_Peligrosas extends Fragment{
                 mListView.setAdapter(mAdapter);
 
             }*/
-        }
+
     }
 
     @Override
