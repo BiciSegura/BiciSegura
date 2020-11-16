@@ -18,3 +18,10 @@ Para la primera entrega se entrega el reporte tecnico del proyecto y el primer p
 * Ingreso al aplicativo mediante usuario y contraseña.
 * Añadir y eliminar denuncias/reportes de robos.
 * Consultar los robos mas recientes, numero total de robos y buscar reportes por lugar y hora.
+# Entrega 2 
+Para la segunda entrega se entrega el reporte tecnico intermedio del proyecto y el segundo prototipo funcional del proyecto. Las funcionalidades que incluyes son las correspondientes a la primera entrega ademas de:
+* Almacenamiento local de los registros de denuncias y autenticacion de usuarios.
+* Atributo de localidades en las denuncias
+* Funcionalidad de las localidades mas peligrosas a partir del numero de denuncias ocurridas en cada localidad.
+* Funcionalidad de las localidades menos peligrosas a partir del numero de denuncias ocurridas en cada localidad.
+* Implementacion de arboles AVL y Heaps
