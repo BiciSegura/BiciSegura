@@ -40,8 +40,8 @@ public class CustomAdapter_Localidades extends ArrayAdapter<Localidad>{
         String nombrelocalidad = "Localidad:  " + localidad.getNombre();
         textoLocal.setText(nombrelocalidad);
 
-        TextView textoNombre = view.findViewById((R.id.lugar));
-        textoNombre.setText("Número de robos:  "+localidad.getNumeroRobos());
+        TextView textoNum = view.findViewById((R.id.lugar));
+        textoNum.setText("Número de robos:  "+localidad.getNumeroRobos());
 
 
         return view;

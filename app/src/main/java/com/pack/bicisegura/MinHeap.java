@@ -35,7 +35,7 @@ public class MinHeap<Anytype extends Comparable<? super Anytype>>{
     public Anytype findmin() {    //HACE FALTA AGREGAR LA EXCEPTION CUANDO ESTA VACIO
         return arr[1];
     }
-    public Anytype deleteMin() {
+    public Anytype deleteMin() {    //HACE FALTA AGREGAR LA EXCEPTION CUANDO ESTA VACIO
         Anytype minValue = this.findmin();
         arr[1] = arr[tamañoActual--];
         percolateDown(1);
@@ -62,6 +62,7 @@ public class MinHeap<Anytype extends Comparable<? super Anytype>>{
                 break;
             }
         }
+        arr[hueco] = aux;
 
     }
 
