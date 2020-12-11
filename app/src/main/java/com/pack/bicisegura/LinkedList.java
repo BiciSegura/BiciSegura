@@ -341,17 +341,84 @@ public class LinkedList <E> {
         Random rand = new Random();
         int horamax = 2400;
         int callemax = 200;
+        int localidadmax = 20;
+        String localidad_s = new String();
         for(int i = 0 ; i < cantidad; i++){
             int hora = rand.nextInt(horamax);
             int calle_random = rand.nextInt(callemax);
             int carrera_random = rand.nextInt(callemax);
             int numero_random = rand.nextInt(callemax);
+            int locanum_random = rand.nextInt(localidadmax);
+            switch (locanum_random) {
+                case 0:
+                    localidad_s = "Usaquén";
+                    break;
+                case 1:
+                    localidad_s = "Chapinero";
+                    break;
+                case 2:
+                    localidad_s = "Santa Fe";
+                    break;
+                case 3:
+                    localidad_s = "San Cristóbal";
+                    break;
+                case 4:
+                    localidad_s = "Usme";
+                    break;
+                case 5:
+                    localidad_s = "Tunjuelito";
+                    break;
+                case 6:
+                    localidad_s = "Bosa";
+                    break;
+                case 7:
+                    localidad_s = "Kennedy";
+                    break;
+                case 8:
+                    localidad_s = "Fontibón";
+                    break;
+                case 9:
+                    localidad_s = "Engativá";
+                    break;
+                case 10:
+                    localidad_s = "Suba";
+                    break;
+                case 11:
+                    localidad_s = "Barrios Unidos";
+                    break;
+                case 12:
+                    localidad_s = "Teusaquillo";
+                    break;
+                case 13:
+                    localidad_s = "Los Mártires";
+                    break;
+                case 14:
+                    localidad_s = "Antonio Nariño";
+                    break;
+                case 15:
+                    localidad_s = "Puente Aranda";
+                    break;
+                case 16:
+                    localidad_s = "La Candelaria";
+                    break;
+                case 17:
+                    localidad_s = "Rafael Uribe Uribe";
+                    break;
+                case 18:
+                    localidad_s = "Ciudad Bolívar";
+                    break;
+                case 19:
+                    localidad_s = "Sumapaz";
+                    break;
+            }
             String lugar = "calle " + calle_random + " carrera " + carrera_random + " - " + numero_random;
             Denuncia P = new Denuncia();
             P.setHora(Integer.toString(hora));
             P.setLugar(lugar);
-            P.setUsuario("Pepito" + i);
+            P.setUsuario("pepito" +i);
+            P.setLocalidad(localidad_s);
             this.insertLast((E) P);
+
         }
     }
 

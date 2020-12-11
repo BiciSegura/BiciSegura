@@ -2,19 +2,11 @@
   <library name="Gradle: com.github.bumptech.glide:gifdecoder:4.8.0@aar">
     <ANNOTATIONS>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4ed2fc4de7fc9f8c9142bf0ebff8d207/jetified-gifdecoder-4.8.0/annotations.zip!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1bc9a9d3dbfe07e76723fe3e3b64ad89/jetified-gifdecoder-4.8.0/annotations.zip!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/87428dc8b21fbed80f9b4cd27b457817/jetified-gifdecoder-4.8.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4ed2fc4de7fc9f8c9142bf0ebff8d207/jetified-gifdecoder-4.8.0/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4ed2fc4de7fc9f8c9142bf0ebff8d207/jetified-gifdecoder-4.8.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4ed2fc4de7fc9f8c9142bf0ebff8d207/jetified-gifdecoder-4.8.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1bc9a9d3dbfe07e76723fe3e3b64ad89/jetified-gifdecoder-4.8.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1bc9a9d3dbfe07e76723fe3e3b64ad89/jetified-gifdecoder-4.8.0/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1bc9a9d3dbfe07e76723fe3e3b64ad89/jetified-gifdecoder-4.8.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/87428dc8b21fbed80f9b4cd27b457817/jetified-gifdecoder-4.8.0/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/87428dc8b21fbed80f9b4cd27b457817/jetified-gifdecoder-4.8.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/87428dc8b21fbed80f9b4cd27b457817/jetified-gifdecoder-4.8.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/gifdecoder/4.8.0/efaa5fafad842304486e8d5c6a77208b8531e25e/gifdecoder-4.8.0-javadoc.jar!/" />

@@ -22,7 +22,7 @@ public class denunciar extends AppCompatActivity {
     LinkedList<Denuncia> ListaDenuncias;
     private Spinner spinner;
     private static final String[]paths = {"Usaquén", "Chapinero", "Santa Fe", "San Cristóbal", "Usme",
-            "Tunjuelito", "Bosa", "Kennedy", "Fontibon", "Engativá", "Suba", "Barrios Unidos" , "Teusaquillo",
+            "Tunjuelito", "Bosa", "Kennedy", "Fontibón", "Engativá", "Suba", "Barrios Unidos" , "Teusaquillo",
             "Los Mártires", "Antonio Nariño", "Puente Aranda", "La Candelaria", "Rafael Uribe Uribe", "Ciudad Bolivar", "Sumapaz"};
 
     @Override
@@ -68,7 +68,7 @@ public class denunciar extends AppCompatActivity {
                 Toast.makeText(denunciar.this, "Se guardó su denuncia", Toast.LENGTH_LONG).show();
 
 
-                Intent reg = new Intent(denunciar.this, inicia_Pestañas.class);
+                Intent reg = new Intent(denunciar.this, Barra_Lateral.class);
                 startActivity(reg);
 
             }

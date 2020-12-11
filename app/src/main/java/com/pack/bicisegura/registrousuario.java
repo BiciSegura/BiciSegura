@@ -59,7 +59,7 @@ public class registrousuario extends AppCompatActivity {
 
                         Toast.makeText(registrousuario.this, "Su usuario se registró correctamente", Toast.LENGTH_LONG).show();
 
-                        Intent reg = new Intent(registrousuario.this, inicia_Pestañas.class);
+                        Intent reg = new Intent(registrousuario.this, Barra_Lateral.class);
                         startActivity(reg);
 
                     }

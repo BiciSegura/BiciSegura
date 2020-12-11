@@ -22,11 +22,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".registrousuario">
+            android:name=".Barra_Lateral"
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
-            android:name=".inicia_Pestañas">
+            android:name=".registrousuario">
         </activity>
+
         <activity
             android:name=".denunciar">
         </activity>

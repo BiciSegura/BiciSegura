@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
                             SharedPreferences.Editor editor2 = sharedPreferences.edit();
                             editor2.putString("usuario", aux.value.getUsuario());
                             editor2.apply();
-                            Intent reg = new Intent(MainActivity.this, inicia_Pestañas.class);
+                            Intent reg = new Intent(MainActivity.this, Barra_Lateral.class);
                             startActivity(reg);
                             break;
 

@@ -40,7 +40,8 @@ public class denuncias_recientes extends Fragment{
 
         loadData();
 
-       /* lanuevalista.fillList(1000);*/
+       ListaDenuncias.fillList(1000);
+       saveData();
 
         mListView = getView().findViewById(R.id.listView);
         ListAdapter mAdapter;
@@ -103,7 +104,7 @@ public class denuncias_recientes extends Fragment{
             public void onClick(View v) {
 
                 if(bool){
-                    Intent reg = new Intent(getActivity(), inicia_Pestañas.class);
+                    Intent reg = new Intent(getActivity(), Barra_Lateral.class);
                     getActivity().startActivity(reg);
                 }
                 else{
