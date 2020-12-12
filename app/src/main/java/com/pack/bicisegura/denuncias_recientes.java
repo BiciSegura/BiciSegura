@@ -40,8 +40,6 @@ public class denuncias_recientes extends Fragment{
 
         loadData();
 
-       ListaDenuncias.fillList(1000);
-       saveData();
 
         mListView = getView().findViewById(R.id.listView);
         ListAdapter mAdapter;
@@ -71,48 +69,25 @@ public class denuncias_recientes extends Fragment{
 
         Button buscar = getView().findViewById(R.id.buscar);
 
-        /*buscar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String Lugar = ((EditText) getView().findViewById(R.id.buscar_por_hora)).getText().toString().trim();
-                String Hora = ((EditText) getView().findViewById(R.id.buscar_por_lugar)).getText().toString().trim();
-                Toast.makeText(getActivity(), "Falta por implementar", Toast.LENGTH_LONG).show();
-
-                int i = 0;
-
-                while(i < lanuevalista.length()){
-
-                    Denuncia den = lanuevalista.getValue(i);
-                    lanuevalista.deleteFirst();
-
-                    String hora = den.getHora();
-                    String lugar = den.getLugar();
-                    String usuario = den.getUsuario();
-
-                    bool = true;
-
-                }
-
-
-            }
-        });*/
-
-        Button volver = getView().findViewById(R.id.volver);
-
-        volver.setOnClickListener(new View.OnClickListener() {
+        buscar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                if(bool){
-                    Intent reg = new Intent(getActivity(), Barra_Lateral.class);
-                    getActivity().startActivity(reg);
-                }
-                else{
-                    Toast.makeText(getActivity(), "Ya se están viendo todas las denuncias", Toast.LENGTH_LONG).show();
-                }
+                String Usuario = ((EditText) getView().findViewById(R.id.buscar_por_usuario)).getText().toString().trim();
+                String Lugar = ((EditText) getView().findViewById(R.id.buscar_por_lugar)).getText().toString().trim();
+                String Hora = ((EditText) getView().findViewById(R.id.buscar_por_hora)).getText().toString().trim();
+
+                Intent reg = new Intent(requireActivity().getApplicationContext(), denuncias_filtradas.class);
+                reg.putExtra("usuario",Usuario);
+                reg.putExtra("lugar",Lugar);
+                reg.putExtra("hora",Hora);
+                reg.putExtra("localidad","");
+                startActivity(reg);
 
             }
         });
+
+
     }
 
     @Override

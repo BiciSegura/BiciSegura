@@ -39,6 +39,8 @@
         </activity>
         <activity android:name="com.pack.bicisegura.eliminar_denuncia" >
         </activity>
+        <activity android:name="com.pack.bicisegura.denuncias_filtradas" >
+        </activity>
         <activity
             android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
             android:exported="false"

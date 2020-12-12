@@ -58,6 +58,10 @@ public class Barra_Lateral extends AppCompatActivity implements NavigationView.O
                 getSupportFragmentManager().beginTransaction().replace(R.id.cont_fragmentos, new Pestañas_entrega2()).commit();
                 break;
 
+            case R.id.entrega3:
+                getSupportFragmentManager().beginTransaction().replace(R.id.cont_fragmentos, new Pestañas_entrega3()).commit();
+                break;
+
 
         }
         drawer.closeDrawer(GravityCompat.START);

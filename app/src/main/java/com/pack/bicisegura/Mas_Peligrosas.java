@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListAdapter;
 import android.widget.ListView;
@@ -22,6 +23,7 @@ public class Mas_Peligrosas extends Fragment{
 
     private ListView mListView;
     LinkedList<Denuncia> ListaDenuncias;
+    private List<Localidad> mLista = new ArrayList<>();
 
 
     @Override
@@ -61,7 +63,7 @@ public class Mas_Peligrosas extends Fragment{
 
         mListView = getView().findViewById(R.id.listView);
         ListAdapter mAdapter;
-        List<Localidad> mLista = new ArrayList<>();
+
 
 
         while(MenosR.tamañoActual != 0){
@@ -74,6 +76,22 @@ public class Mas_Peligrosas extends Fragment{
             System.out.println(nombre + num);
             mAdapter = new CustomAdapter_Localidades(requireActivity().getApplicationContext(), R.layout.elemento_listas_localidades,mLista);
             mListView.setAdapter(mAdapter);
+            mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view, int i, long id) {
+
+                    Intent intent = new Intent(getActivity(), denuncias_filtradas.class);
+
+                    intent.putExtra("localidad", mLista.get(i).getNombre());
+                    intent.putExtra("usuario", "");
+                    intent.putExtra("hora", "");
+                    intent.putExtra("lugar", "");
+
+                    requireActivity().startActivity(intent);
+                }
+            });
         }
 
 

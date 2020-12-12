@@ -32,9 +32,6 @@ public class Pestañas_entrega2 extends Fragment {
 
         View view = inflater.inflate(R.layout.pestanas_entrega2, container, false);
 
-        Toast.makeText(getActivity(), "Ya se están viendo todas las denuncias", Toast.LENGTH_LONG).show();
-
-
         tablayout = view.findViewById(R.id.tab_layout);
         //tablayout.setTabMode(TabLayout.MODE_SCROLLABLE);
         viewPager = view.findViewById(R.id.vista_pags);

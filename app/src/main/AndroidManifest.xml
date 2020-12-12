@@ -28,12 +28,14 @@
         <activity
             android:name=".registrousuario">
         </activity>
-
         <activity
             android:name=".denunciar">
         </activity>
         <activity
             android:name=".eliminar_denuncia">
+        </activity>
+        <activity
+            android:name=".denuncias_filtradas">
         </activity>
 
     </application>
