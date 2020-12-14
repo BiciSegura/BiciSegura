@@ -21,7 +21,10 @@ public class Localidad implements Comparable<Localidad>{
         this.num_robos = num_robos;
     }
 
-
+    public Localidad(){
+        this.nombre = "";
+        this.num_robos = 0;
+    }
 
     public Localidad(String nombre, int num_robos){
         this.nombre = nombre;

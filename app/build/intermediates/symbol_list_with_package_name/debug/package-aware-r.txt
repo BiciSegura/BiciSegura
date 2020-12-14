@@ -2225,6 +2225,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout drawer_header
+layout elemento_listas_camino
 layout elemento_listas_denuncia
 layout elemento_listas_localidades
 layout eliminar_denuncia
