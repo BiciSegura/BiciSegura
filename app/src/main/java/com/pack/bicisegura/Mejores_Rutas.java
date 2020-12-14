@@ -69,10 +69,16 @@ public class Mejores_Rutas extends Fragment {
 
                 String localidadInicial = spinner1.getSelectedItem().toString();
                 String localidadFinal = spinner2.getSelectedItem().toString();
+                System.out.println(localidadInicial);
+                System.out.println(localidadFinal);
 
                 int init, fin;
+
                 init = localidadAInt(localidadInicial);
                 fin = localidadAInt(localidadFinal);
+
+                System.out.println(init);
+                System.out.println(fin);
 
                 loadData();
                 for (int i=0; i<ListaDenuncias.length;i++){
@@ -81,6 +87,7 @@ public class Mejores_Rutas extends Fragment {
                     String localidad_s = temp.getLocalidad();
 
                     switch (localidad_s) {
+
                         case "Usaquén":
                             for(int k=0;k<20;k++){
                                 if(matrizLocalidades[0][k] != 0) {
@@ -107,7 +114,7 @@ public class Mejores_Rutas extends Fragment {
                                 }
                             }
                             break;
-                        case "Santa fe":
+                        case "Santa Fe":
                             for(int k=0;k<20;k++){
                                 if(matrizLocalidades[2][k] != 0) {
                                     matrizLocalidades[2][k]++;
@@ -302,7 +309,7 @@ public class Mejores_Rutas extends Fragment {
                                 }
                             }
                             break;
-                        case "Rafael Uribe":
+                        case "Rafael Uribe Uribe":
                             for(int k=0;k<20;k++){
                                 if(matrizLocalidades[17][k] != 0) {
                                     matrizLocalidades[17][k]++;
@@ -344,7 +351,7 @@ public class Mejores_Rutas extends Fragment {
                     }
                 }
 
-                int[] preD = dijkstra(matrizLocalidades, init, fin);
+                dijkstra(matrizLocalidades, init, fin);
 
                 Localidad laloca = new Localidad();
                 laloca.setNombre(intALocalidad(fin));
@@ -353,9 +360,10 @@ public class Mejores_Rutas extends Fragment {
                 int j = fin;
                 while(j!=0){
 
-                    j = preD[j];
-                    laloca.setNombre(intALocalidad(preD[j]));
+                  //  j = preD[j];
+                  //  laloca.setNombre(intALocalidad(preD[j]));
                     mLista.add(laloca);
+
                     System.out.print(" <- " + j);
 
 
@@ -521,13 +529,12 @@ public class Mejores_Rutas extends Fragment {
 
     }
 
-    public static int[] dijkstra(int[][] matrix, int ini, int fin){
+    public static void dijkstra(int[][] matrix, int ini, int fin) {
 
         int initoriginal = ini;
-        int[] preD = new int[20];
+
         if(ini == fin){
             System.out.println("Path = "+ini+" <-"+fin);
-            return preD;
         }
         else{
             if(ini != 0){
@@ -551,6 +558,7 @@ public class Mejores_Rutas extends Fragment {
 
             }
 
+            int[] preD = new int[20];
             int min = 999, nextNode = 0; // min holds the minimum value, nextNode holds the value for the next node.
             //scan = new Scanner(System.in);
             int[] distance = new int[20]; // the distance matrix
@@ -629,30 +637,20 @@ public class Mejores_Rutas extends Fragment {
         */
             //int j = 20;
 
-            /*
-            *
-            * *
-            * *
 
-            System.out.print("Path = " + fin);
+            System.out.print("Pathda = " + fin);
             int j = fin;
-            while(j!=0){
+            do{
 
                 j = preD[j];
                 System.out.print(" <- " + j);
 
 
-            }
-            System.out.print(" <- " + initoriginal);
+            }while(j!=0);
+
             System.out.println();
-            *
-            * *
-            * *
-            */
-            return preD;
 
         }
-
     }
 
     public static int localidadAInt (String localidad){
@@ -712,7 +710,7 @@ public class Mejores_Rutas extends Fragment {
             case "Rafael Uribe Uribe":
                 iLocalidad = 17;
                 break;
-            case "Ciudad Bolívar":
+            case "Ciudad Bolivar":
                 iLocalidad = 18;
                 break;
             case "Sumapaz":
@@ -781,7 +779,7 @@ public class Mejores_Rutas extends Fragment {
                 localidad_s = "Rafael Uribe Uribe";
                 break;
             case 18:
-                localidad_s = "Ciudad Bolívar";
+                localidad_s = "Ciudad Bolivar";
                 break;
             case 19:
                 localidad_s = "Sumapaz";
