@@ -1,4 +1,4 @@
-#Sun Nov 15 22:37:49 COT 2020
-base.0=C\:\\Users\\Sergio\\StudioProjects\\BiciSegura\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+#Sun Dec 13 20:19:59 COT 2020
+base.0=C\:\\Users\\MATEO DIAZ\\Desktop\\BiciSegura\\BiciSegur\\BiciSegura\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

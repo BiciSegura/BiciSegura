@@ -24,8 +24,14 @@
         <menu>
             <item
                 android:id="@+id/nav_share"
-                android:title="Próximamente"
-                android:iconTint="@color/colorPrimary"/>
+                android:icon="@android:drawable/ic_menu_send"
+                android:iconTint="@color/colorPrimary"
+                android:title="Mi bici" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@android:drawable/ic_menu_send"
+                android:iconTint="@color/colorPrimary"
+                android:title="Settings" />
 
         </menu>
     </item>
